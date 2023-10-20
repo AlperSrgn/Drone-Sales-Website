@@ -209,7 +209,7 @@ button {
 .header_section {
   width: 100%;
   float: left;
-  background-image: linear-gradient(-13deg, #ffffff 30%, #274d5a 20%);
+  background-image: linear-gradient(-13deg, #ffffff 30%, #053b50 20%);
   position: relative;
   overflow-x: hidden;
 }
@@ -259,7 +259,7 @@ button {
 }
 .navbar-light .navbar-nav .nav-link:focus,
 .navbar-light .navbar-nav .nav-link:hover {
-  color: #f7c17b !important;
+  color: #e4f1ff !important;
 }
 
 .login_menu {
@@ -339,14 +339,14 @@ button {
   float: left;
   position: relative;
   z-index: 1;
-  padding-top: 30px;
+  padding-top: 20px;
 }
 
 .best_text {
   width: 90px;
   margin: 0 auto;
   text-align: center;
-  background-color: #f7c17b;
+  background-color: #ffffff;
   color: #325662;
   font-size: 20px;
   font-weight: bold;
@@ -376,8 +376,9 @@ button {
   width: 100%;
   float: left;
   font-size: 16px;
-  color: #ffffff;
-  margin: 0px;
+  color: #fd9800;
+  margin-top: 30px;
+  margin-bottom: -20px;
 }
 
 .contact_bt {
@@ -390,21 +391,21 @@ button {
   width: 180px;
   float: left;
   font-size: 18px;
-  color: #ffffff;
+  color: #053b50;
   text-align: center;
-  background-color: #f7c17b;
+  background-color: #ffffff;
   padding: 8px 0px;
 }
 
 .contact_bt a:hover {
-  color: #000;
-  background-color: #ffffff;
+  color: #ffffff;
+  background-color: #053b50;
 }
 
 #main_slider a.carousel-control-prev {
   left: 88%;
   top: 60%;
-  background-color: #f7c17b;
+  background-color: #325662;
   color: #ffffff;
 }
 
@@ -428,8 +429,8 @@ button {
 #main_slider .carousel-control-next:hover,
 #main_slider .carousel-control-prev:focus,
 #main_slider .carousel-control-next:focus {
-  background-color: #f7c17b;
-  color: #ffffff;
+  background-color: #e4f1ff;
+  color: #325662;
 }
 /* banner section end */
 
@@ -549,8 +550,8 @@ button {
   font-weight: bold;
 }
 .buy_bt a:hover {
-  color: #ffffff;
-  background-color: #f7c17b;
+  color: #325662;
+  background-color: #e4f1ff;
 }
 
 .price_text {
