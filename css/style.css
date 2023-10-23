@@ -253,13 +253,13 @@ button {
 .navbar-expand-lg .navbar-nav .nav-link {
   padding-right: 15px;
   padding-left: 15px;
-  color: #e0dcdc !important;
+  color: #ffffff !important;
   display: flex;
   font-size: 18px;
 }
 .navbar-light .navbar-nav .nav-link:focus,
 .navbar-light .navbar-nav .nav-link:hover {
-  color: #e4f1ff !important;
+  color: #98c7fa !important;
 }
 
 .login_menu {
@@ -347,7 +347,7 @@ button {
   margin: 0 auto;
   text-align: center;
   background-color: #ffffff;
-  color: #325662;
+  color: #053b50;
   font-size: 20px;
   font-weight: bold;
   border-radius: 100px;
@@ -406,7 +406,7 @@ button {
 #main_slider a.carousel-control-prev {
   left: 88%;
   top: 60%;
-  background-color: #325662;
+  background-color: #053b50;
   color: #ffffff;
 }
 
@@ -420,7 +420,7 @@ button {
 #main_slider .carousel-control-next {
   width: 68px;
   height: 68px;
-  background: #325662;
+  background: #053b50;
   opacity: 1;
   font-size: 30px;
   color: #ffffff;
@@ -431,7 +431,7 @@ button {
 #main_slider .carousel-control-prev:focus,
 #main_slider .carousel-control-next:focus {
   background-color: #e4f1ff;
-  color: #325662;
+  color: #053b50;
 }
 /* banner section end */
 
@@ -440,7 +440,7 @@ button {
 .cycle_section {
   width: 100%;
   float: left;
-  padding-bottom: 90px;
+  padding-bottom: 0px;
 }
 
 .cycle_taital {
@@ -474,7 +474,7 @@ button {
   height: 50px;
   font-size: 18px;
   color: #ffffff;
-  background-color: #325662;
+  background-color: #053b50;
   border-radius: 100px;
   text-align: center;
   padding: 10px 0px;
@@ -516,7 +516,7 @@ button {
   position: absolute;
   width: 180px;
   height: 1px;
-  background-color: #325662;
+  background-color: #053b50;
   left: 0px;
   right: initial;
   margin: 0 auto;
@@ -545,13 +545,13 @@ button {
   float: left;
   font-size: 18px;
   color: #ffffff;
-  background-color: #325662;
+  background-color: #053b50;
   padding: 8px 5px;
   text-align: center;
   font-weight: bold;
 }
 .buy_bt a:hover {
-  color: #325662;
+  color: #053b50;
   background-color: #e4f1ff;
 }
 
@@ -593,7 +593,7 @@ button {
   height: 50px;
   font-size: 18px;
   color: #ffffff;
-  background-color: #325662;
+  background-color: #053b50;
   border-radius: 100px;
   text-align: center;
   padding: 10px 0px;
@@ -622,7 +622,7 @@ button {
 }
 .read_bt a:hover {
   color: #ffffff;
-  background-color: #325662;
+  background-color: #053b50;
 }
 
 /* cycle section end */
@@ -721,14 +721,14 @@ button {
   float: left;
   font-size: 18px;
   color: #ffffff;
-  background-color: #f7c17b;
+  background-color: #053b50;
   padding: 8px 5px;
   text-align: center;
-  margin-top: 80px;
+  margin-top: 70px;
 }
 .read_bt_1 a:hover {
-  color: #ffffff;
-  background-color: #325662;
+  color: #053b50;
+  background-color: #e4f1ff;
 }
 
 /* about section end */
@@ -745,6 +745,7 @@ button {
   border: 1px solid #e4e4e4;
   border-style: dotted;
   padding: 40px 30px 100px 30px;
+  margin-top: 50px;
 }
 
 .client_taital {
@@ -799,7 +800,7 @@ button {
 #my_slider a.carousel-control-prev {
   left: 640px;
   top: 93%;
-  background-color: #f7c17b;
+  background-color: #053b50;
   color: #ffffff;
 }
 
@@ -813,7 +814,7 @@ button {
 #my_slider .carousel-control-next {
   width: 68px;
   height: 68px;
-  background: #191616;
+  background: #053b50;
   opacity: 1;
   font-size: 30px;
   color: #ffffff;
@@ -823,8 +824,8 @@ button {
 #my_slider .carousel-control-next:hover,
 #my_slider .carousel-control-prev:focus,
 #my_slider .carousel-control-next:focus {
-  background-color: #f7c17b;
-  color: #ffffff;
+  background-color: #e4f1ff;
+  color: #053b50;
 }
 
 /* client section end */
@@ -833,7 +834,7 @@ button {
 .news_section {
   width: 100%;
   float: left;
-  background-color: #355764;
+  background-color: #053b50;
   height: auto;
   padding: 90px 0px;
 }
@@ -924,7 +925,7 @@ button {
 .contact_section {
   width: 100%;
   float: left;
-  background-color: #355764;
+  background-color: #053b50;
   height: auto;
   padding-bottom: 90px;
 }
@@ -988,16 +989,16 @@ textarea#comment::placeholder {
 .send_btn a {
   width: 100%;
   float: left;
-  color: #ffffff;
+  color: #053b50;
   font-size: 18px;
   padding: 10px 0px;
-  background-color: #f7c17b;
+  background-color: #e4f1ff;
   border-radius: 10px;
 }
 
 .send_btn a:hover {
-  color: #000;
-  background-color: #ffffff;
+  color: #e4f1ff;
+  background-color: #053b50;
 }
 /* contact section end*/
 /* footer section start*/
@@ -1005,7 +1006,7 @@ textarea#comment::placeholder {
 .footer_section {
   width: 100%;
   float: left;
-  background-color: #355764;
+  background-color: #222528;
   height: auto;
   background-size: cover;
 }
@@ -1025,7 +1026,7 @@ textarea#comment::placeholder {
   width: 70%;
   float: left;
   font-size: 16px;
-  color: #9e9c9c;
+  color: #000000;
   background-color: #ffffff;
   padding: 8px 15px;
   margin-top: 40px;
@@ -1043,20 +1044,20 @@ textarea#comment::placeholder {
   font-size: 16px;
   color: #ffffff;
   text-align: center;
-  background-color: #f7c17b;
+  background-color: #053b50;
   padding: 8px;
   margin-top: 20px;
 }
 .subscribe_bt a:hover {
-  color: #9e9c9c;
+  color: #222528;
   background-color: #ffffff;
 }
 
 .call_text a {
-  color: #dfdfdf;
+  color: #f9f9fa;
 }
 .call_text a:hover {
-  color: #f7c17b;
+  color: #98c7fa;
 }
 .padding_left_0 {
   padding-left: 15px;
