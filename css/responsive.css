@@ -429,6 +429,7 @@
   }
   .box_main_1 {
     margin-top: 20px;
+    width: auto;
   }
   .contact_main {
     width: 100%;
@@ -593,6 +594,7 @@
   }
   .box_main_1 {
     margin-top: 20px;
+    height: auto;
   }
   .contact_main {
     width: 100%;
