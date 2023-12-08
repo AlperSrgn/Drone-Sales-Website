@@ -146,6 +146,11 @@
     padding-left: 8px;
     font-size: 14px;
   }
+  .navbar-expand-lg .navbar-nav .nav-link1 {
+    padding-right: 8px;
+    padding-left: 8px;
+    font-size: 14px;
+  }
   .login_menu li {
     float: left;
     font-size: 14px;
@@ -289,6 +294,11 @@
     text-align: center;
     justify-content: center;
   }
+  .navbar-expand-lg .navbar-nav .nav-link1 {
+    color: #000 !important;
+    text-align: center;
+    justify-content: center;
+  }
 
   .login_menu {
     display: none;
@@ -383,7 +393,7 @@
   .about_section {
     background-size: cover;
     height: 640px;
-    margin-bottom: 180px;
+    margin-bottom: 300px;
   }
   .about_taital {
     font-size: 26px;
@@ -452,6 +462,11 @@
     transform: translateX(0);
   }
   .navbar-expand-lg .navbar-nav .nav-link {
+    color: #000 !important;
+    text-align: center;
+    justify-content: center;
+  }
+  .navbar-expand-lg .navbar-nav .nav-link1 {
     color: #000 !important;
     text-align: center;
     justify-content: center;
@@ -551,7 +566,7 @@
   .about_section {
     background-size: cover;
     height: 640px;
-    margin-bottom: 180px;
+    margin-bottom: 500px;
   }
   .about_taital {
     font-size: 26px;
@@ -617,6 +632,11 @@
     transform: translateX(0);
   }
   .navbar-expand-lg .navbar-nav .nav-link {
+    color: #000 !important;
+    text-align: center;
+    justify-content: center;
+  }
+  .navbar-expand-lg .navbar-nav .nav-link1 {
     color: #000 !important;
     text-align: center;
     justify-content: center;

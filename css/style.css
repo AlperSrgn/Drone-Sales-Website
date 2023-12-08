@@ -213,6 +213,13 @@ button {
   position: relative;
   overflow-x: hidden;
 }
+.contact_header_section {
+  width: 100%;
+  float: left;
+  background-image: linear-gradient(-13deg, #ffffff 30%, 20%);
+  position: relative;
+  overflow-x: hidden;
+}
 
 .header_bg {
   width: 100%;
@@ -259,6 +266,17 @@ button {
 }
 .navbar-light .navbar-nav .nav-link:focus,
 .navbar-light .navbar-nav .nav-link:hover {
+  color: #98c7fa !important;
+}
+.navbar-expand-lg .navbar-nav .nav-link1 {
+  padding-right: 15px;
+  padding-left: 15px;
+  color: #053b50 !important;
+  display: flex;
+  font-size: 18px;
+}
+.navbar-light .navbar-nav .nav-link1:focus,
+.navbar-light .navbar-nav .nav-link1:hover {
   color: #98c7fa !important;
 }
 
@@ -631,7 +649,15 @@ button {
 .about_section {
   width: 100%;
   float: left;
-  background-image: url(../images/about-bg.png);
+  height: auto;
+  padding: 90px 0px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.about_section1 {
+  width: 100%;
+  float: left;
+  background-image: url(../images/about-bg1.jpg);
   height: auto;
   padding: 90px 0px;
   background-size: 100%;
@@ -644,14 +670,16 @@ button {
   text-align: center;
   font-weight: bold;
 }
+
 .about_text {
   width: 70%;
-  font-size: 16px;
+  font-size: 15px;
   color: #ffffff;
   text-align: center;
   margin: 0 auto;
   padding-top: 30px;
 }
+
 .about_main {
   width: 100%;
   float: left;
@@ -839,6 +867,7 @@ button {
   padding: 90px 0px;
   margin-top: 90px;
 }
+
 .news_taital {
   width: 100%;
   font-size: 40px;
@@ -941,6 +970,14 @@ button {
   background-color: #053b50;
   height: auto;
   padding-bottom: 90px;
+}
+
+.contact_section_icons {
+  width: 100%;
+  float: left;
+  background-color: #053b50;
+  height: auto;
+  padding: 90px 0px;
 }
 
 .contact_main {
