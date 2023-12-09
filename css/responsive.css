@@ -101,6 +101,16 @@
     padding: 1em 4%;
     width: 92%;
   }
+  .frame_1 {
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+  }
+  .frame_3 {
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+  }
   .mean-container .mean-nav ul li li a {
     width: 90%;
     padding: 1em 5%;
@@ -272,6 +282,9 @@
   .long_text {
     font-size: 14px;
   }
+  .long_text_1 {
+    font-size: 14px;
+  }
   .contact_section {
     padding-top: 0px;
   }
@@ -441,6 +454,26 @@
     margin-top: 20px;
     width: auto;
   }
+  .box_main_2 {
+    margin-top: 20px;
+    width: auto;
+  }
+  .box_main_4 {
+    margin-top: 20px;
+    width: 400px;
+  }
+
+  .frame_1 {
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+  }
+  .frame_3 {
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+  }
+
   .contact_main {
     width: 100%;
   }
@@ -610,6 +643,14 @@
   .box_main_1 {
     margin-top: 20px;
     height: auto;
+  }
+  .box_main_2 {
+    margin-top: 20px;
+    height: auto;
+  }
+  .box_main_4 {
+    margin-top: 20px;
+    width: 100%;
   }
   .contact_main {
     width: 100%;

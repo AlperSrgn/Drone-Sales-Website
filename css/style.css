@@ -572,6 +572,24 @@ button {
   color: #053b50;
   background-color: #e4f1ff;
 }
+.add_bt {
+  width: 170px;
+  margin: auto;
+}
+.add_bt a {
+  width: 100%;
+  float: left;
+  font-size: 18px;
+  color: #ffffff;
+  background-color: #053b50;
+  padding: 8px 5px;
+  text-align: center;
+  font-weight: bold;
+}
+.add_bt a:hover {
+  color: #053b50;
+  background-color: #e4f1ff;
+}
 
 .price_text {
   width: 100%;
@@ -888,6 +906,11 @@ button {
   width: 100%;
   float: left;
 }
+
+.products_section {
+  width: 100%;
+  float: left;
+}
 .box_main_1 {
   width: 100%;
   float: left;
@@ -896,8 +919,33 @@ button {
   border-radius: 30px;
   padding: 20px;
 }
+
 .box_main_1:hover {
   box-shadow: 0px 1px 9px 1px #fff;
+}
+
+.box_main_2 {
+  width: 100%;
+  float: left;
+  background-color: #ffffff;
+  height: 500px;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px 0;
+}
+
+.box_main_2:hover {
+  box-shadow: 0px 1px 9px 1px #fff;
+}
+
+.box_main_4 {
+  width: 300%;
+  align-items: center;
+  margin: 0 auto;
+  background-color: #ffffff;
+  height: 100%;
+  border-radius: 10px;
+  padding: 50px;
 }
 
 .frame {
@@ -905,11 +953,26 @@ button {
   width: 100%;
   overflow: hidden;
 }
-.no_zoomout_frame {
+.frame_1 {
+  height: 400px;
+  width: 100%;
+  overflow: hidden;
+}
+.frame_2 {
+  height: 600px;
+  width: 100%;
+  overflow: hidden;
+}
+.frame_3 {
+  height: 800px;
+  width: 100%;
+  overflow: hidden;
+}
+.no_zoomout {
   margin: auto;
   text-align: center;
 }
-/*
+
 .zoomout img {
   height: 300px;
   width: 100%;
@@ -918,14 +981,11 @@ button {
   -ms-transition: all 2s ease;
   transition: all 2s ease;
 }
-*/
 
-/*
 .zoomout img:hover {
   width: 100%;
   height: 500px;
 }
-*/
 
 .box_main_1:hover {
   box-shadow: 0px 1px 9px 1px #fff;
@@ -938,6 +998,7 @@ button {
   float: left;
   padding: 20px 15px 40px 15px;
 }
+
 .speed_text {
   width: 100%;
   float: left;
@@ -960,8 +1021,15 @@ button {
   padding-top: 10px;
   text-align: center;
 }
+.long_text_1 {
+  width: 100%;
+  font-size: 16px;
+  margin: 0px;
+  padding-top: 10px;
+  text-align: center;
+}
 
-/* news section start*/
+/* news section end*/
 
 /* contact section start*/
 .contact_section {
