@@ -883,7 +883,7 @@ button {
   background-color: #053b50;
   height: auto;
   padding: 90px 0px;
-  margin-top: 90px;
+  margin-top: 0px;
 }
 
 .news_taital {
@@ -918,6 +918,7 @@ button {
   height: 470px;
   border-radius: 30px;
   padding: 20px;
+  margin: 10px 0;
 }
 
 .box_main_1:hover {
