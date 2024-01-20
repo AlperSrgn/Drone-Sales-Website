@@ -6,6 +6,9 @@
   .header-search {
     padding: 15px 0px;
   }
+  .add_bt_1 a {
+    font-size: 12px;
+  }
 }
 
 /*------------------------------------------------------------------- 767px x 599px ---------------------------------------------------------------------*/
@@ -111,6 +114,7 @@
     width: 100%;
     overflow: hidden;
   }
+
   .mean-container .mean-nav ul li li a {
     width: 90%;
     padding: 1em 5%;
@@ -131,6 +135,9 @@
   }
   .mean-container .mean-nav ul li a.mean-expand {
     top: 0;
+  }
+  .price_text {
+    font-size: 15px;
   }
 }
 
@@ -191,6 +198,7 @@
     float: none;
   }
 }
+/*------------------------------------------------------------------- 768px x 991px ---------------------------------------------------------------------*/
 
 @media (min-width: 768px) and (max-width: 991px) {
   #main_slider a.carousel-control-prev {
@@ -238,6 +246,18 @@
   .cycles_text::after {
     width: 90px;
   }
+  .product_name_text {
+    font-size: 12px;
+    margin-top: -100px;
+  }
+  .box_main_2 {
+    width: 220px;
+    height: 350px;
+  }
+  .price_text {
+    font-size: 12px;
+  }
+
   .image_2 {
     padding-left: 20px;
   }
@@ -318,7 +338,18 @@
   }
 }
 
+/*------------------------------------------------------------------- 576px x 767px ---------------------------------------------------------------------*/
+
 @media (min-width: 576px) and (max-width: 767px) {
+  .product_name_text {
+    font-size: 10px;
+    margin-top: -120px;
+  }
+
+  .add_bt_1 a {
+    font-size: 8px;
+    margin-top: -100px;
+  }
   #main_slider a.carousel-control-prev {
     position: absolute;
     left: 175px;
@@ -333,6 +364,9 @@
   }
   .navbar-toggler:not(:disabled):not(.disabled) {
     display: block;
+  }
+  .price_text {
+    font-size: 12px;
   }
   .bg-light {
     background-color: #ffffff !important;
@@ -450,14 +484,16 @@
   .news_text {
     width: 100%;
   }
+
   .box_main_1 {
     margin-top: 20px;
     width: auto;
   }
   .box_main_2 {
-    margin-top: 20px;
-    width: auto;
+    width: 150px;
+    height: 200px;
   }
+
   .box_main_4 {
     margin-top: 20px;
     width: 400px;
@@ -509,6 +545,7 @@
     display: none;
   }
 }
+/*------------------------------------------------------------------- max width 575px ---------------------------------------------------------------------*/
 
 @media (max-width: 575px) {
   #main_slider a.carousel-control-prev {
@@ -552,6 +589,9 @@
   }
   .best_text {
     margin-top: 30px;
+  }
+  .shop_page_images {
+    max-width: 80%;
   }
   .header_section.header_bg::after {
     height: 100%;
@@ -645,9 +685,10 @@
     height: auto;
   }
   .box_main_2 {
-    margin-top: 20px;
-    height: auto;
+    height: 400px;
+    width: 100%;
   }
+
   .box_main_4 {
     margin-top: 20px;
     width: 100%;
