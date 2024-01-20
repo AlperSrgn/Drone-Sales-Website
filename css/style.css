@@ -591,6 +591,27 @@ button {
   background-color: #e4f1ff;
 }
 
+.add_bt_1 {
+  background-color: #053b50;
+}
+.add_bt_1 a {
+  width: 100%;
+  float: left;
+  font-size: 12px;
+  color: #ffffff;
+  background-color: #053b50;
+  border: 1px solid #053b50;
+  border-radius: 5px;
+  padding: 5px;
+  background: 1px solid #053b50;
+  text-align: center;
+  font-weight: bold;
+}
+.add_bt_1 a:hover {
+  color: #053b50;
+  background-color: #e4f1ff;
+}
+
 .price_text {
   width: 100%;
   float: right;
@@ -598,7 +619,7 @@ button {
   font-size: 20px;
   color: #222222;
   font-weight: bold;
-  padding-top: 8px;
+  padding-top: 0px;
 }
 .cycle_section_3 {
   width: 100%;
@@ -926,13 +947,13 @@ button {
 }
 
 .box_main_2 {
-  width: 100%;
+  width: 320px;
+  height: 400px;
   float: left;
   background-color: #ffffff;
-  height: 500px;
   border-radius: 10px;
-  padding: 20px;
-  margin: 10px 0;
+  padding: 5px 20px;
+  margin: 20px 0;
 }
 
 .box_main_2:hover {
@@ -1007,6 +1028,14 @@ button {
   color: #161616;
   text-align: center;
 }
+.product_name_text {
+  width: 100%;
+  float: left;
+  font-size: 22px;
+  color: #161616;
+  text-align: center;
+}
+
 .post_text {
   width: 100%;
   float: left;
