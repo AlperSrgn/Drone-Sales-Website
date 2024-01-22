@@ -334,7 +334,7 @@
   }
 
   .login_menu {
-    display: none;
+    display: flex;
   }
 }
 
@@ -542,7 +542,7 @@
   }
 
   .login_menu {
-    display: none;
+    display: flex;
   }
 }
 /*------------------------------------------------------------------- max width 575px ---------------------------------------------------------------------*/
@@ -725,6 +725,6 @@
   }
 
   .login_menu {
-    display: none;
+    display: flex;
   }
 }

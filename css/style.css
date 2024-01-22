@@ -296,7 +296,7 @@ button {
   padding-right: 15px;
 }
 .login_menu li a {
-  color: #ffffff;
+  color: #053b50;
 }
 
 .sidenav {
@@ -1168,7 +1168,7 @@ textarea#comment::placeholder {
   width: 100%;
   float: left;
   font-size: 16px;
-  color: #dfdfdf;
+  color: #fff;
   padding-top: 10px;
 }
 
