@@ -1161,7 +1161,7 @@ textarea#comment::placeholder {
   background-size: cover;
 }
 .map_main {
-  width: 100%;
+  width: 50%;
   float: left;
 }
 .call_text {
