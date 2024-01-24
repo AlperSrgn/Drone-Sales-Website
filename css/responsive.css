@@ -140,6 +140,7 @@
     font-size: 15px;
   }
 }
+/*------------------------------------------------------------------- 992px x 1199px ---------------------------------------------------------------------*/
 
 @media (min-width: 992px) and (max-width: 1199px) {
   #my_slider a.carousel-control-prev {
@@ -170,6 +171,12 @@
   }
   .login_menu li {
     float: left;
+    font-size: 14px;
+  }
+  .dropdown-content {
+    margin-top: 26px;
+  }
+  .dropdown-content a {
     font-size: 14px;
   }
   .header_section::after {

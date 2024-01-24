@@ -257,6 +257,36 @@ button {
   float: left;
 }
 
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 100%;
+  z-index: 1;
+  margin-top: 32px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+.dropdown-content a {
+  font-size: 18px;
+  color: black;
+  padding: 5px 10px;
+  text-decoration: none;
+  display: block;
+  background: #fff;
+}
+.dropdown-content a:hover {
+  background-color: #053b50;
+  color: #fff;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 .navbar-expand-lg .navbar-nav .nav-link {
   padding-right: 15px;
   padding-left: 15px;
@@ -1159,9 +1189,33 @@ textarea#comment::placeholder {
   background-color: #222528;
   height: auto;
   background-size: cover;
+  padding: 40px 10px;
+}
+.footer_titles {
+  font-size: 18px;
+}
+.animated-underline {
+  position: relative;
+  text-decoration: none;
+}
+
+.animated-underline:hover::after {
+  width: 100%;
+  margin-left: 10px;
+}
+
+.animated-underline::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background: #98c7fa;
+  transition: width 0.3s ease;
 }
 .map_main {
-  width: 50%;
+  width: 100%;
   float: left;
 }
 .call_text {
@@ -1198,6 +1252,7 @@ textarea#comment::placeholder {
   padding: 8px;
   margin-top: 20px;
   border: 1px solid #222528;
+  border-radius: 4px;
 }
 .subscribe_bt a:hover {
   color: #ffffff;
@@ -1213,6 +1268,9 @@ textarea#comment::placeholder {
 }
 .padding_left_0 {
   padding-left: 15px;
+}
+.margin_bottom_0 {
+  margin-bottom: 50px;
 }
 
 .social_icon {
