@@ -43,7 +43,7 @@
   </head>
   <body>
     <!-- header section start -->
-    <div class="contact_header_section header_bg">
+    <div class="contact_header_section header_bg" style="padding-bottom: 150px;">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a href="index.html" class="logo"><img src="images/logo.png" /></a>
         <button
@@ -53,8 +53,7 @@
           data-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+          aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -77,13 +76,23 @@
           </ul>
           <form class="form-inline my-2 my-lg-0">
             <div class="login_menu">
-              <ul>
-                <li><a href="login.html"><img src="images/login_icon.png"> Login</a></li>
-                <li><a href="sepet.html"><img src="images/trolly-icon.png"> Sepetim</a></li>
-                <!-- <li><a href="#"><img src="images/search-icon.png"></a></li>-->
-              </ul>
+               <ul>
+                  <!--<div class="dropdown"><li style="background-color: #fff; color: #053b50; width: 100%; padding: 1px 5px; text-align: center; border-radius: 5px;">
+                     <img src="images/login_icon.png"> Profil <img src="images/dropdown-icon.png"></a></li>
+                     <div class="dropdown-content">
+                        <a href="#">Giriş yap</a>
+                        <a href="#">Bilgilerim</a>
+                        <a href="#">Çıkış</a>
+                      </div>
+                     </div>-->
+                  <li class="basket_icon" onclick="toggleModal()"><img src="images/trolly-icon.png"> Sepetim
+                     <span class="basket_count">2</span>
+                  </li>
+                  <!-- <li><a href="#"><img src="images/search-icon.png"></a></li>-->
+               </ul>
             </div>
-          </form>
+            <div></div>
+         </form>
         </div>
         <div id="main">
           <span
@@ -100,7 +109,7 @@
     <div class="contact_section_icons layout_padding">
       <div class="container">
         <div class="products_section layout_padding">
-            <div class="row">
+            <div class="row product_list">
                <div class="col-sm-4">
                   <div class="box_main_2">
                      <h2 class="speed_text_1"><h4 class="price_text" style="float: left; text-align: left;">Fiyat <span style=" color: #325662">₺</span> <span style=" color: #325662">8.400</span></h4></h2>
@@ -162,7 +171,6 @@
                   </div>
                </div>
                
-               
             </div>
             
          </div>
@@ -170,34 +178,107 @@
    </div>
    <!-- products section end-->
     
+   <!-- basket section start-->
+    <div class="basket_section">
+      <div class="basket_items">
+         <img src="images/close-icon.png" onclick="toggleModal()" style="position: absolute; left: 10px; top: 10px; cursor: pointer;">
+         <h2 class="basket_title">SEPETİNİZ</h2>
+         <ul class="basket_list">
+            <li class="basket_item">
+               <img src="images/img-9.png" width="100" height="100" alt="">
+               <div class="basket_item_info">
+                  <h4 class="product_name">MAVIC Mini 2 SE</h4>
+                  <span class="product_price">8.400 ₺</span> <br>
+                  <span class="product_remove">Sil</span>
+               </div>
+               <div class="product_count">
+                  <span class="decrease">-</span>
+                  <span>2</span>
+                  <span class="increase">+</span>
+               </div>
+            </li>
+            <li class="basket_item">
+               <img src="images/img-9.png" width="100" height="100" alt="">
+               <div class="basket_item_info">
+                  <h4 class="product_name">MAVIC Mini 2 SE</h4>
+                  <span class="product_price">8.400 ₺</span> <br>
+                  <span class="product_remove">Sil</span>
+               </div>
+               <div class="product_count">
+                  <span class="decrease">-</span>
+                  <span>2</span>
+                  <span class="increase">+</span>
+               </div>
+            </li>
+            <li class="basket_item">
+               <img src="images/img-9.png" width="100" height="100" alt="">
+               <div class="basket_item_info">
+                  <h4 class="product_name">MAVIC Mini 2 SE</h4>
+                  <span class="product_price">8.400 ₺</span> <br>
+                  <span class="product_remove">Sil</span>
+               </div>
+               <div class="product_count">
+                  <span class="decrease">-</span>
+                  <span>2</span>
+                  <span class="increase">+</span>
+               </div>
+            </li>
+         </ul>
+         <div class="basket_total">
+            <span class="total_price">Toplam : 145.99 ₺</span>
+            <button>ALIŞVERİŞİ TAMAMLA</button>
+         </div>
+      </div>
+    </div>
+
+
+    <!-- basket section end -->
 
 
     <!-- footer section start -->
     <div class="footer_section layout_padding">
       <div class="container-fluid">
          <div class="row">
-            <div class="col-lg-8 col-sm-12 padding_0">
+            <!--<div class="col-lg-8 col-sm-12 padding_0">
                <div class="map_main">
                   <div class="map-responsive">
                     <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&amp;q=Eiffel+Tower+Paris+France" width="600" height="400" frameborder="0" style="border:0; width: 100%;" allowfullscreen=""></iframe>
                   </div>
-               </div>
+               </div>-->
             </div>
-            <div class="col-lg-4 col-sm-12">
-               <div class="call_text"><a href="#"><img src="images/map-icon.png"><span class="padding_left_0">Mağazamızı ziyaret edin</span></a></div>
-               <div class="call_text"><a href="tel:+"><img src="images/call-icon.png"><span class="padding_left_0">Şimdi Ara  +01 123467890</span></a></div>
-               <div class="call_text"><a href="mailto:"><img src="images/mail-icon.png"><span class="padding_left_0">demo@gmail.com</span></a></div>
+            <div class="col-lg-4 col-md-4 col-sm-10 margin_bottom_0" style="float: left;">
+               <div class="call_text"><a href="shop.html"><span class="padding_left_0 footer_titles animated-underline">Ürünlerimiz</span></a></div>
+               <div class="call_text"><a href="#"><img src="images/map-icon.png"><span class="padding_left_0 animated-underline">Mağazamızı ziyaret edin</span></a></div>
+               <div class="call_text"><a href="#"><img src="images/call-icon.png"><span class="padding_left_0 animated-underline">Şimdi Ara  +01 123467890</span></a></div>
+               <div class="call_text"><a href="#"><img src="images/mail-icon.png"><span class="padding_left_0 animated-underline">demo@gmail.com</span></a></div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-10 margin_bottom_0" style="float: left;">
+               <div class="call_text"><span class="padding_left_0 footer_titles">Kullanılabilir Bağlantılar</span></div>
+               <div class="call_text"><a href="index.html"><img src="images/homepage-icon.png"><span class="padding_left_0 animated-underline">Ana Sayfa</span></a></div>
+               <div class="call_text"><a href="about.html"><img src="images/about-icon.png"><span class="padding_left_0 animated-underline">Hakkımızda</span></a></div>
+               <div class="call_text"><a href="shop.html"><img src="images/shop-icon.png"><span class="padding_left_0 animated-underline">Alışveriş</span></a></div>
+               <div class="call_text"><a href="announcement.html"><img src="images/announcement-icon.png"><span class="padding_left_0 animated-underline">Duyurular</span></a></div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-10 margin_bottom_0" style="float: left;">
+               <div class="call_text"><a href="contact.html"><span class="padding_left_0 footer_titles animated-underline">İletişim</span></a></div>
+               <div class="call_text"><a href="#"><img src="images/map-icon.png"><span class="padding_left_0 animated-underline">Mağazamızı ziyaret edin</span></a></div>
+               <div class="call_text"><a href="#"><img src="images/call-icon.png"><span class="padding_left_0 animated-underline">Şimdi Ara  +01 123467890</span></a></div>
+               <div class="call_text"><a href="#"><img src="images/mail-icon.png"><span class="padding_left_0 animated-underline">demo@gmail.com</span></a></div>
                <div class="social_icon">
                   <ul>
-                     <li><a href="https://www.facebook.com/"><img src="images/fb-icon1.png"></a></li>
-                     <li><a href="https://twitter.com/"><img src="images/twitter-icon.png"></a></li>
-                     <li><a href="https://tr.linkedin.com/"><img src="images/linkedin-icon.png"></a></li>
-                     <li><a href="https://www.instagram.com/"><img src="images/instagram-icon.png"></a></li>
+                     <li><a href="#"><img src="images/fb-icon1.png"></a></li>
+                     <li><a href="#"><img src="images/twitter-icon.png"></a></li>
+                     <li><a href="#"><img src="images/linkedin-icon.png"></a></li>
+                     <li><a href="#"><img src="images/instagram-icon.png"></a></li>
                   </ul>
                </div>
-               <input type="text" class="email_text" placeholder="E-posta" name="Enter Your Email">
-               <div class="subscribe_bt"><a href="#">BİZE KATIL</a></div>
+               
+               <!--<input type="text" class="email_text" placeholder="E-posta" name="Enter Your Email">
+               <div class="subscribe_bt"><a href="#">BİZE KATIL</a></div>-->
             </div>
+            
          </div>
       </div>
    </div>
@@ -210,6 +291,7 @@
    </div>
    <!-- copyright section end -->    
    <!-- Javascript files-->
+   <script src="js/main.js"></script>
    <script src="js/jquery.min.js"></script>
    <script src="js/popper.min.js"></script>
    <script src="js/bootstrap.bundle.min.js"></script>

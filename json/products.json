@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "MAVIC Mini 2 SE",
+    "price": 8400,
+    "stock": 100,
+    "imgSource": "./images/img-1.png"
+  },
+  {
+    "id": 2,
+    "name": "PHANTOM 3",
+    "price": 4300,
+    "stock": 100,
+    "imgSource": "./images/img-2.png"
+  },
+  {
+    "id": 3,
+    "name": "MAVIC PRO",
+    "price": 11200,
+    "stock": 100,
+    "imgSource": "./images/img-3.png"
+  },
+  {
+    "id": 4,
+    "name": "MAVIC Mini 2 SE",
+    "price": 8400,
+    "stock": 100,
+    "imgSource": "./images/img-1.png"
+  },
+  {
+    "id": 5,
+    "name": "SPARK",
+    "price": 2400,
+    "stock": 100,
+    "imgSource": "./images/img-4-2.png"
+  },
+  {
+    "id": 6,
+    "name": "Inspire 1",
+    "price": 48300,
+    "stock": 100,
+    "imgSource": "./images/img-5.png"
+  }
+]
