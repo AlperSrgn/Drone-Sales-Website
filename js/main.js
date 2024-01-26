@@ -57,7 +57,7 @@ const listBasketItems = () => {
     <div class="basket_item_info">
        <h4 class="product_name">${item.product.name}</h4>
        <span class="product_price">${item.product.price} ₺</span> <br>
-       <span class="product_remove" onclick="removeItemToBasket(${item.product.id})">Sil</span>
+       <span class="product_remove" onclick="removeItemToBasket(${item.product.id})"><img src="images/remove-icon.png"> Sil</span>
     </div>
     <div class="product_count">
        <span class="decrease" onclick="decreaseItem(${item.product.id})">-</span>
