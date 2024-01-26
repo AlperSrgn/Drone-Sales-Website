@@ -77,16 +77,18 @@
           <form class="form-inline my-2 my-lg-0">
             <div class="login_menu">
                <ul>
-                  <!--<div class="dropdown"><li style="background-color: #fff; color: #053b50; width: 100%; padding: 1px 5px; text-align: center; border-radius: 5px;">
-                     <img src="images/login_icon.png"> Profil <img src="images/dropdown-icon.png"></a></li>
+                  <div class="dropdown">
+                     <li>
+                        <img src="images/login_icon.png"><img src="images/dropdown-icon.png">
+                     </li>
                      <div class="dropdown-content">
                         <a href="#">Giriş yap</a>
                         <a href="#">Bilgilerim</a>
                         <a href="#">Çıkış</a>
                       </div>
-                     </div>-->
-                  <li class="basket_icon" onclick="toggleModal()"><img src="images/trolly-icon.png"> Sepetim
-                     <span class="basket_count">2</span>
+                  </div>
+                  <li class="basket_icon" onclick="toggleModal()"><img src="images/trolly-icon.png">
+                     <span class="basket_count"></span>
                   </li>
                   <!-- <li><a href="#"><img src="images/search-icon.png"></a></li>-->
                </ul>
@@ -109,14 +111,14 @@
     <div class="contact_section_icons layout_padding">
       <div class="container">
         <div class="products_section layout_padding">
-            <div class="row product_list">
-               <div class="col-sm-4">
+            <div class="row product_list">            <!-- ÜRÜNLER BURADA LİSTELENİYOR-->
+              <!--<div class="col-sm-4">
                   <div class="box_main_2">
                      <h2 class="speed_text_1"><h4 class="price_text" style="float: left; text-align: left;">Fiyat <span style=" color: #325662">₺</span> <span style=" color: #325662">8.400</span></h4></h2>
                      <div class="no_zoomout frame"><a href="product_1.html"><img src="images/img-1.png" class="shop_page_images"></a></div>
                      <div class="padding_15">
                         <h2 class="product_name_text">MAVIC Mini 2 SE</h2>
-                        <div class="add_bt_1"><a href="#">SEPETE EKLE</a></div>
+                        <div class="add_bt_1">SEPETE EKLE</div>
                      </div>
                   </div>
                </div>
@@ -126,7 +128,7 @@
                      <div class="no_zoomout frame"><a href="product_2.html"><img src="images/img-2.png" class="shop_page_images"></a></div>
                      <div class="padding_15">
                         <h2 class="product_name_text">PHANTOM 3</h2>
-                        <div class="add_bt_1"><a href="#">SEPETE EKLE</a></div>
+                        <div class="add_bt_1">SEPETE EKLE</div>
                      </div>
                   </div>
                </div>
@@ -136,7 +138,7 @@
                      <div class="no_zoomout frame"><a href="product_3.html"><img src="images/img-3.png" class="shop_page_images"></a></div>
                      <div class="padding_15">
                         <h2 class="product_name_text">MAVIC Pro</h2>
-                        <div class="add_bt_1"><a href="#">SEPETE EKLE</a></div>
+                        <div class="add_bt_1">SEPETE EKLE</div>
                      </div>
                   </div>
                </div>
@@ -146,7 +148,7 @@
                      <div class="no_zoomout frame"><a href="product_9.html"><img src="images/img-9.png" class="shop_page_images"></a></div>
                      <div class="padding_15">
                         <h2 class="product_name_text">MAVIC Air</h2>
-                        <div class="add_bt_1"><a href="#">SEPETE EKLE</a></div>
+                        <div class="add_bt_1">SEPETE EKLE</div>
                      </div>
                   </div>
                </div>
@@ -156,7 +158,7 @@
                      <div class="no_zoomout frame"><a href="product_6.html"><img src="images/img-4-2.png" class="shop_page_images"></a></div>
                      <div class="padding_15">
                         <h2 class="product_name_text">SPARK</h2>
-                        <div class="add_bt_1"><a href="#">SEPETE EKLE</a></div>
+                        <div class="add_bt_1">SEPETE EKLE</div>
                      </div>
                   </div>
                </div>
@@ -166,25 +168,25 @@
                      <div class="no_zoomout frame"><a href="product_5.html"><img src="images/img-5.png" class="shop_page_images"></a></div>
                      <div class="padding_15">
                         <h2 class="product_name_text">Inspire 1</h2>
-                        <div class="add_bt_1"><a href="#">SEPETE EKLE</a></div>
+                        <div class="add_bt_1">SEPETE EKLE</div>
                      </div>
                   </div>
-               </div>
-               
+               </div> -->
             </div>
-            
          </div>
       </div>
    </div>
    <!-- products section end-->
     
    <!-- basket section start-->
+
     <div class="basket_section">
       <div class="basket_items">
          <img src="images/close-icon.png" onclick="toggleModal()" style="position: absolute; left: 10px; top: 10px; cursor: pointer;">
          <h2 class="basket_title">SEPETİNİZ</h2>
          <ul class="basket_list">
-            <li class="basket_item">
+            <li class="basket_item">Sepetinizde ürün bulunmuyor</li>      <!--SEPETTEKİ ÜRÜNLERİN LİSTESİ BURADA-->
+            <!--<li class="basket_item">
                <img src="images/img-9.png" width="100" height="100" alt="">
                <div class="basket_item_info">
                   <h4 class="product_name">MAVIC Mini 2 SE</h4>
@@ -209,28 +211,14 @@
                   <span>2</span>
                   <span class="increase">+</span>
                </div>
-            </li>
-            <li class="basket_item">
-               <img src="images/img-9.png" width="100" height="100" alt="">
-               <div class="basket_item_info">
-                  <h4 class="product_name">MAVIC Mini 2 SE</h4>
-                  <span class="product_price">8.400 ₺</span> <br>
-                  <span class="product_remove">Sil</span>
-               </div>
-               <div class="product_count">
-                  <span class="decrease">-</span>
-                  <span>2</span>
-                  <span class="increase">+</span>
-               </div>
-            </li>
+            </li>-->
          </ul>
          <div class="basket_total">
-            <span class="total_price">Toplam : 145.99 ₺</span>
-            <button>ALIŞVERİŞİ TAMAMLA</button>
+            <span class="total_price"></span>
+            <button class="complete_shopping">ALIŞVERİŞİ TAMAMLA</button>
          </div>
       </div>
     </div>
-
 
     <!-- basket section end -->
 
@@ -247,14 +235,14 @@
                </div>-->
             </div>
             <div class="col-lg-4 col-md-4 col-sm-10 margin_bottom_0" style="float: left;">
-               <div class="call_text"><a href="shop.html"><span class="padding_left_0 footer_titles animated-underline">Ürünlerimiz</span></a></div>
-               <div class="call_text"><a href="#"><img src="images/map-icon.png"><span class="padding_left_0 animated-underline">Mağazamızı ziyaret edin</span></a></div>
-               <div class="call_text"><a href="#"><img src="images/call-icon.png"><span class="padding_left_0 animated-underline">Şimdi Ara  +01 123467890</span></a></div>
-               <div class="call_text"><a href="#"><img src="images/mail-icon.png"><span class="padding_left_0 animated-underline">demo@gmail.com</span></a></div>
+               <div class="call_text"><span class="padding_left_0 footer_titles">DESTEK</span></div>
+               <div class="call_text"><a href="#"><span class="padding_left_0 animated-underline">KVK Kanunu</span></a></div>
+               <div class="call_text"><a href="#"><span class="padding_left_0 animated-underline">Öneri ve Şikayet</span></a></div>
+               <div class="call_text"><a href="#"><span class="padding_left_0 animated-underline">Mesafeli Satış Sözleşmesi</span></a></div>
             </div>
 
             <div class="col-lg-4 col-md-4 col-sm-10 margin_bottom_0" style="float: left;">
-               <div class="call_text"><span class="padding_left_0 footer_titles">Kullanılabilir Bağlantılar</span></div>
+               <div class="call_text"><span class="padding_left_0 footer_titles">FAYDALI BAĞLANTILAR</span></div>
                <div class="call_text"><a href="index.html"><img src="images/homepage-icon.png"><span class="padding_left_0 animated-underline">Ana Sayfa</span></a></div>
                <div class="call_text"><a href="about.html"><img src="images/about-icon.png"><span class="padding_left_0 animated-underline">Hakkımızda</span></a></div>
                <div class="call_text"><a href="shop.html"><img src="images/shop-icon.png"><span class="padding_left_0 animated-underline">Alışveriş</span></a></div>
@@ -262,23 +250,21 @@
             </div>
 
             <div class="col-lg-4 col-md-4 col-sm-10 margin_bottom_0" style="float: left;">
-               <div class="call_text"><a href="contact.html"><span class="padding_left_0 footer_titles animated-underline">İletişim</span></a></div>
+               <div class="call_text"><span class="padding_left_0 footer_titles">İLETİŞİM</span></div>
                <div class="call_text"><a href="#"><img src="images/map-icon.png"><span class="padding_left_0 animated-underline">Mağazamızı ziyaret edin</span></a></div>
                <div class="call_text"><a href="#"><img src="images/call-icon.png"><span class="padding_left_0 animated-underline">Şimdi Ara  +01 123467890</span></a></div>
                <div class="call_text"><a href="#"><img src="images/mail-icon.png"><span class="padding_left_0 animated-underline">demo@gmail.com</span></a></div>
                <div class="social_icon">
                   <ul>
-                     <li><a href="#"><img src="images/fb-icon1.png"></a></li>
+                     <li><a href="#"><img src="images/facebook-icon.png"></a></li>
                      <li><a href="#"><img src="images/twitter-icon.png"></a></li>
                      <li><a href="#"><img src="images/linkedin-icon.png"></a></li>
                      <li><a href="#"><img src="images/instagram-icon.png"></a></li>
                   </ul>
                </div>
-               
                <!--<input type="text" class="email_text" placeholder="E-posta" name="Enter Your Email">
                <div class="subscribe_bt"><a href="#">BİZE KATIL</a></div>-->
             </div>
-            
          </div>
       </div>
    </div>
@@ -286,7 +272,7 @@
    <!-- copyright section start -->
    <div class="copyright_section">
       <div class="container">
-         <p class="copyright_text">Copyright 2019 All Right Reserved By.<a href="https://html.design"> Free  html Templates</p>
+         <p class="copyright_text">Copyright © 2023 All Right Reserved By.<a href="https://html.design"> Free  html Templates</p>
       </div>
    </div>
    <!-- copyright section end -->    

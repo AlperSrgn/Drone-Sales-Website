@@ -271,16 +271,26 @@ button {
   border-radius: 5px;
 }
 .dropdown-content a {
-  font-size: 18px;
+  font-size: 15px;
   color: black;
   padding: 5px 10px;
   text-decoration: none;
   display: block;
   background: #fff;
+  border: 1px solid #053b50;
+  border-radius: 5px;
 }
 .dropdown-content a:hover {
-  background-color: #053b50;
-  color: #fff;
+  background-color: #98c7fa;
+}
+
+.dropdown li {
+  background-color: #fff;
+  color: #053b50;
+  width: 100%;
+  padding: 1px 5px;
+  text-align: center;
+  border-radius: 5px;
 }
 
 .dropdown:hover .dropdown-content {
@@ -319,12 +329,12 @@ button {
   padding: 0px;
 }
 .login_menu li {
-  width: 100%;
+  width: 5rem;
   height: auto;
   position: relative;
   float: left;
   font-size: 18px;
-  background-color: #ffffff;
+  margin: 0 5px;
   padding: 0 5px;
   color: #000;
 }
@@ -622,9 +632,6 @@ button {
 }
 
 .add_bt_1 {
-  background-color: #053b50;
-}
-.add_bt_1 a {
   width: 100%;
   float: left;
   font-size: 12px;
@@ -633,11 +640,12 @@ button {
   border: 1px solid #053b50;
   border-radius: 5px;
   padding: 5px;
-  background: 1px solid #053b50;
   text-align: center;
   font-weight: bold;
+  cursor: pointer;
 }
-.add_bt_1 a:hover {
+
+.add_bt_1:hover {
   color: #053b50;
   background-color: #e4f1ff;
 }
@@ -964,9 +972,9 @@ button {
 }
 
 .basket_count {
-  width: 15px;
-  height: 15px;
-  left: 1.1rem;
+  width: 10px;
+  height: 10px;
+  left: 2.8rem;
   bottom: 0;
   background-color: black;
   border-radius: 50%;
@@ -979,9 +987,13 @@ button {
   font-size: 1rem;
 }
 
+.basket_count:empty {
+  display: none;
+}
+
 .basket_icon {
   position: relative;
-  width: 90%;
+  width: 100%;
   text-align: center;
   border-radius: 5px;
   cursor: pointer;
@@ -1094,6 +1106,10 @@ button {
   font-size: 20px;
   font-weight: bold;
   color: #053b50;
+}
+
+.total_price:empty + .complete_shopping {
+  display: none;
 }
 .box_main_1 {
   width: 100%;
@@ -1357,7 +1373,7 @@ textarea#comment::placeholder {
   width: 100%;
   float: left;
   font-size: 16px;
-  color: #fff;
+  color: #ffffff;
   padding-top: 10px;
 }
 

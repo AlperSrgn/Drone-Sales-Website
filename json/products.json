@@ -22,10 +22,10 @@
   },
   {
     "id": 4,
-    "name": "MAVIC Mini 2 SE",
-    "price": 8400,
+    "name": "MAVIC Air",
+    "price": 7500,
     "stock": 100,
-    "imgSource": "./images/img-1.png"
+    "imgSource": "./images/img-9.png"
   },
   {
     "id": 5,
