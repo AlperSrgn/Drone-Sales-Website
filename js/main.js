@@ -51,7 +51,7 @@ const listBasketItems = () => {
   let totalPrice = 0;
 
   basketList.forEach(item => {
-    totalPrice += item.product.price;
+    totalPrice += item.product.price * item.quantity;
     basketListHtml += `<li class="basket_item">
     <img src="${item.product.imgSource}" width="100" height="100" alt="">
     <div class="basket_item_info">
@@ -60,9 +60,9 @@ const listBasketItems = () => {
        <span class="product_remove" onclick="removeItemToBasket(${item.product.id})">Sil</span>
     </div>
     <div class="product_count">
-       <span class="decrease">-</span>
+       <span class="decrease" onclick="decreaseItem(${item.product.id})">-</span>
        <span>${item.quantity}</span>
-       <span class="increase">+</span>
+       <span class="increase" onclick="increaseItem(${item.product.id})">+</span>
     </div>
  </li>`;
   });
@@ -84,9 +84,17 @@ const addItemToBasket = productId => {
       let addedItem = { quantity: 1, product: foundProduct };
       basketList.push(addedItem);
     } else {
-      basketList[basketAlreadyIndex].quantity += 1;
+      if (
+        basketList[basketAlreadyIndex].quantity <
+        basketList[basketAlreadyIndex].product.stock
+      ) {
+        basketList[basketAlreadyIndex].quantity += 1;
+      } else {
+        return;
+      }
     }
     listBasketItems();
+    /**SEPETE ÜRÜN EKLENDİ TOAST MESAJI BURAYA GELECEK */
   }
 };
 
@@ -96,6 +104,36 @@ const removeItemToBasket = productId => {
   );
   if (foundIndex != -1) {
     basketList.splice(foundIndex, 1);
+  }
+  listBasketItems();
+};
+
+const decreaseItem = productId => {
+  const foundIndex = basketList.findIndex(
+    basket => basket.product.id == productId
+  );
+  if (foundIndex != -1) {
+    if (basketList[foundIndex].quantity != 1)
+      basketList[foundIndex].quantity -= 1;
+    else {
+      removeItemToBasket(productId);
+    }
+  }
+  listBasketItems();
+};
+
+const increaseItem = productId => {
+  const foundIndex = basketList.findIndex(
+    basket => basket.product.id == productId
+  );
+  if (foundIndex != -1) {
+    if (
+      basketList[foundIndex].quantity < basketList[foundIndex].product.stock
+    ) {
+      basketList[foundIndex].quantity += 1;
+    } else {
+      /*YETERLİ STOK YOK MESAJI BURAYA GELECEK */
+    }
   }
   listBasketItems();
 };
