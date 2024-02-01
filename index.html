@@ -60,15 +60,19 @@
                <form class="form-inline my-2 my-lg-0">
                   <div class="login_menu">
                      <ul>
-                        <div class="dropdown"><li style="background-color: #fff; color: #053b50; width: 100%; padding: 1px 5px; text-align: center; border-radius: 5px;">
-                           <img src="images/login_icon.png"> Profil <img src="images/dropdown-icon.png"></a></li>
+                        <div class="dropdown">
+                           <li>
+                              <img src="images/login_icon.png"><img src="images/dropdown-icon.png">
+                           </li>
                            <div class="dropdown-content">
-                              <a href="login.html">Giriş yap</a>
+                              <a href="#">Giriş yap</a>
                               <a href="#">Bilgilerim</a>
                               <a href="#">Çıkış</a>
                             </div>
-                           </div>
-                        <li><a href="sepet.html" style="background-color: #fff; width: 100%; padding: 5px; text-align: center; border-radius: 5px;"><img src="images/trolly-icon.png"> Sepetim</a></li>
+                        </div>
+                        <li class="basket_icon" onclick="toggleModal()"><img src="images/trolly-icon.png">
+                           <span class="basket_count"></span>
+                        </li>
                         <!-- <li><a href="#"><img src="images/search-icon.png"></a></li>-->
                      </ul>
                   </div>
@@ -318,6 +322,52 @@
          </div>
       </div>
       <!-- client section end -->
+
+<!-- basket section start-->
+
+<div class="basket_section">
+   <div class="basket_items">
+      <img src="images/close-icon.png" onclick="toggleModal()" style="position: absolute; left: 10px; top: 10px; cursor: pointer;">
+      <h2 class="basket_title">SEPETİNİZ</h2>
+      <ul class="basket_list">
+         <li class="basket_empty_string">Sepetinizde ürün bulunmuyor<br>
+            <img src="images/empty_basket_icon.png"></li>      <!--SEPETTEKİ ÜRÜNLERİN LİSTESİ BURADA-->
+         <!--<li class="basket_item">
+            <img src="images/img-9.png" width="100" height="100" alt="">
+            <div class="basket_item_info">
+               <h4 class="product_name">MAVIC Mini 2 SE</h4>
+               <span class="product_price">8.400 ₺</span> <br>
+               <span class="product_remove">Sil</span>
+            </div>
+            <div class="product_count">
+               <span class="decrease">-</span>
+               <span>2</span>
+               <span class="increase">+</span>
+            </div>
+         </li>
+         <li class="basket_item">
+            <img src="images/img-9.png" width="100" height="100" alt="">
+            <div class="basket_item_info">
+               <h4 class="product_name">MAVIC Mini 2 SE</h4>
+               <span class="product_price">8.400 ₺</span> <br>
+               <span class="product_remove">Sil</span>
+            </div>
+            <div class="product_count">
+               <span class="decrease">-</span>
+               <span>2</span>
+               <span class="increase">+</span>
+            </div>
+         </li>-->
+      </ul>
+      <div class="basket_total">
+         <span class="total_price"></span>
+         <button class="complete_shopping">ALIŞVERİŞİ TAMAMLA</button>
+      </div>
+   </div>
+ </div>
+
+ <!-- basket section end -->
+
       <!-- news section start -->
       <div class="news_section layout_padding">
          <div class="container">
@@ -415,6 +465,7 @@
    </div>
    <!-- copyright section end -->  
       <!-- Javascript files-->
+      <script src="js/main.js"></script>
       <script src="js/jquery.min.js"></script>
       <script src="js/popper.min.js"></script>
       <script src="js/bootstrap.bundle.min.js"></script>

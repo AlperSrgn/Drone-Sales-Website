@@ -30,7 +30,7 @@ const createProductItemsHtml = () => {
        }" class="shop_page_images"></a></div>
        <div class="padding_15">
           <h2 class="product_name_text">${product.name}</h2>
-          <div class="add_bt_1" onclick="addItemToBasket(${
+          <div class="add_bt_1 noSelect" onclick="addItemToBasket(${
             product.id
           })">SEPETE EKLE</div>
        </div>
@@ -59,7 +59,7 @@ const listBasketItems = () => {
        <span class="product_price">${item.product.price} ₺</span> <br>
        <span class="product_remove" onclick="removeItemToBasket(${item.product.id})"><img src="images/remove-icon.png"> Sil</span>
     </div>
-    <div class="product_count">
+    <div class="product_count noSelect">
        <span class="decrease" onclick="decreaseItem(${item.product.id})">-</span>
        <span>${item.quantity}</span>
        <span class="increase" onclick="increaseItem(${item.product.id})">+</span>
@@ -69,7 +69,7 @@ const listBasketItems = () => {
 
   basketListEl.innerHTML = basketListHtml
     ? basketListHtml
-    : `<li class="basket_item">Sepetinizde ürün bulunmuyor</li>`;
+    : `<li class="basket_empty_string">Sepetinizde ürün bulunmuyor<br><img src="images/empty_basket_icon.png"></li>`;
   totalPriceEl.innerHTML =
     totalPrice > 0 ? "Sepet Tutarı: " + totalPrice.toFixed(2) + " ₺" : null;
 };

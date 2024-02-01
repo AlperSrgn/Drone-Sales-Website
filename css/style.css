@@ -267,7 +267,6 @@ button {
   min-width: 100%;
   z-index: 1;
   margin-top: 32px;
-  border: 1px solid white;
   border-radius: 5px;
 }
 .dropdown-content a {
@@ -648,6 +647,9 @@ button {
 .add_bt_1:hover {
   color: #053b50;
   background-color: #e4f1ff;
+}
+.add_bt_1:active {
+  background: #98c7fa;
 }
 
 .price_text {
@@ -1070,6 +1072,13 @@ button {
   color: #000000;
 }
 
+.basket_empty_string {
+  width: 100%;
+  margin: 4rem 0;
+  text-align: center;
+  color: #c7c7c7;
+}
+
 .product_count .increase,
 .decrease {
   color: #053b50;
@@ -1111,6 +1120,21 @@ button {
 .total_price:empty + .complete_shopping {
   display: none;
 }
+
+.noSelect {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.noSelect:focus {
+  outline: none !important;
+}
+
 .box_main_1 {
   width: 100%;
   float: left;
@@ -1473,10 +1497,10 @@ textarea#comment::placeholder {
 .margin_90 {
   margin: 90px 0px;
 }
-
+/*                              PC ekranında navbar açılıp kapanması
 #navbarSupportedContent {
   transform: translateX(100vw);
-}
+}*/
 
 #navbarSupportedContent.nav-normal {
   transform: none;
