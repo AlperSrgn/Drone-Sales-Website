@@ -42,59 +42,70 @@
     />
   </head>
   <body>
-    <!-- header section start -->
-    <div class="contact_header_section header_bg">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a href="index.html" class="logo"><img src="images/logo.png" /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link1" href="index.html">Ana Sayfa</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link1" href="about.html">Hakkımızda</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link1" href="shop.html">Alışveriş</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link1" href="announcement.html">Duyurular</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link1" href="contact.html">İletişim</a>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <div class="login_menu">
-              <ul>
-                <li><a href="login.html"><img src="images/login_icon.png"> Login</a></li>
-                <li><a href="sepet.html"><img src="images/trolly-icon.png"> Sepetim</a></li>
+   <!-- header section start -->
+   <div class="contact_header_section header_bg" style="padding-bottom: 150px;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a href="index.html" class="logo"><img src="images/logo.png" /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link1" href="index.html">Ana Sayfa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link1" href="about.html">Hakkımızda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link1" href="shop.html">Alışveriş</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link1" href="announcement.html">Duyurular</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link1" href="contact.html">İletişim</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <div class="login_menu">
+             <ul>
+                <div class="dropdown">
+                   <li>
+                      <img src="images/login_icon.png"><img src="images/dropdown-icon.png">
+                   </li>
+                   <div class="dropdown-content">
+                      <a href="#">Giriş yap</a>
+                      <a href="#">Bilgilerim</a>
+                      <a href="#">Çıkış</a>
+                    </div>
+                </div>
+                <li class="basket_icon" onclick="toggleModal()"><img src="images/trolly-icon.png">
+                   <span class="basket_count"></span>
+                </li>
                 <!-- <li><a href="#"><img src="images/search-icon.png"></a></li>-->
-              </ul>
-            </div>
-          </form>
-        </div>
-        <div id="main">
-          <span
-            style="font-size: 36px; cursor: pointer; color: #fff"
-            onclick="openNav()"
-            ><img src="images/toggle-icon.png" style="height: 30px"
-          /></span>
-        </div>
-      </nav>
-    </div>
-    <!-- header section end -->
+             </ul>
+          </div>
+          <div></div>
+       </form>
+      </div>
+      <div id="main">
+        <span
+          style="font-size: 36px; cursor: pointer; color: #fff"
+          onclick="openNav()"
+          ><img src="images/toggle-icon.png" style="height: 30px"
+        /></span>
+      </div>
+    </nav>
+  </div>
+  <!-- header section end -->
 
     <!-- products section start-->
     <div class="contact_section_icons layout_padding">
@@ -125,6 +136,51 @@
         </div>
      </div>
      <!-- products section end-->
+
+     <!-- basket section start-->
+
+<div class="basket_section">
+  <div class="basket_items">
+     <img src="images/close-icon.png" onclick="toggleModal()" style="position: absolute; left: 10px; top: 10px; cursor: pointer;">
+     <h2 class="basket_title">SEPETİNİZ</h2>
+     <ul class="basket_list">
+        <li class="basket_empty_string">Sepetinizde ürün bulunmuyor<br>
+           <img src="images/empty_basket_icon.png"></li>      <!--SEPETTEKİ ÜRÜNLERİN LİSTESİ BURADA-->
+        <!--<li class="basket_item">
+           <img src="images/img-9.png" width="100" height="100" alt="">
+           <div class="basket_item_info">
+              <h4 class="product_name">MAVIC Mini 2 SE</h4>
+              <span class="product_price">8.400 ₺</span> <br>
+              <span class="product_remove">Sil</span>
+           </div>
+           <div class="product_count">
+              <span class="decrease">-</span>
+              <span>2</span>
+              <span class="increase">+</span>
+           </div>
+        </li>
+        <li class="basket_item">
+           <img src="images/img-9.png" width="100" height="100" alt="">
+           <div class="basket_item_info">
+              <h4 class="product_name">MAVIC Mini 2 SE</h4>
+              <span class="product_price">8.400 ₺</span> <br>
+              <span class="product_remove">Sil</span>
+           </div>
+           <div class="product_count">
+              <span class="decrease">-</span>
+              <span>2</span>
+              <span class="increase">+</span>
+           </div>
+        </li>-->
+     </ul>
+     <div class="basket_total">
+        <span class="total_price"></span>
+        <button class="complete_shopping">ALIŞVERİŞİ TAMAMLA</button>
+     </div>
+  </div>
+</div>
+
+<!-- basket section end -->
 
      <!-- footer section start -->
      <div class="footer_section layout_padding">
@@ -165,6 +221,7 @@
      </div>
      <!-- copyright section end -->    
      <!-- Javascript files-->
+     <script src="js/main.js"></script>
      <script src="js/jquery.min.js"></script>
      <script src="js/popper.min.js"></script>
      <script src="js/bootstrap.bundle.min.js"></script>

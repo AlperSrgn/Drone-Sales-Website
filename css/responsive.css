@@ -585,6 +585,43 @@
     padding: 0;
   }
 
+  .basket_section.active .basket_items {
+    width: 300px;
+  }
+
+  .basket_total {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 5%;
+    align-items: center;
+    width: inherit;
+    transition: all 250ms ease-in-out;
+  }
+
+  .basket_total button {
+    font-size: 15px;
+  }
+
+  .basket_total .total_price {
+    font-size: 15px;
+  }
+
+  .basket_item_info {
+    width: 170px;
+  }
+
+  .basket_item_info .product_name {
+    font-size: 13px;
+  }
+
+  .basket_item_info .product_price {
+    font-size: 14px;
+  }
+  .basket_item .product_count {
+    font-size: 1.2rem;
+  }
+
   #main {
     display: none;
   }
