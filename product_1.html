@@ -108,118 +108,146 @@
   <!-- header section end -->
 
     <!-- products section start-->
-    <div class="contact_section_icons layout_padding">
-        <div class="container">
-          <div class="products_section layout_padding">
-              <div class="row">
-                 <div class="col-sm-4">
-                    <div class="box_main_4">
-                       <div class="no_zoomout frame_1"><img src="images/img-1.png"></a></div>
-                            <div class="padding_15">
-                                <h2 class="speed_text">MAVIC Mini 2 SE</h2>
-                                <p class="long_text"><p>Ağırlık: 249g</p>
-                                <p>Kontrol Mesafesi: 1.5km</p>
-                                <p>Uçuş Süresi: 30dk</p>
-                                <p>Rüzgar Direnci: 38kph (level 5)</p>
-                                <p>4K HDR Video</p>
-                                <p>Otomatik Kalkış - Eve Dönüş (RTH) işlevi</p>
-                                <p>Maksimum Hız: 70km/s</p>
-                                <h4 class="price_text">Fiyat <span style=" color: #325662">₺</span> <span style=" color: #325662">8.400</span></h4>
-                            </p>
-                                <div class="add_bt"><a href="#">SEPETE EKLE</a></div>
-                            </div>
-                    </div>
-                 </div>
-                 
-              </div>
-           </div>
-        </div>
-     </div>
+
+   <div class="product_container flex">
+      <div class="left">
+         <div class="main_image">
+            <img src="./images/img-1.png" alt="" class="slide">
+         </div>
+         <div class="option flex">
+            <img src="./images/img-1.png" onclick="img('./images/img-1.png')">
+            <img src="./images/img-2.png" onclick="img('./images/img-2.png')">
+            <img src="./images/img-3.png" onclick="img('./images/img-3.png')">
+            <img src="./images/img-4.png" onclick="img('./images/img-4.png')">
+            <img src="./images/img-5.png" onclick="img('./images/img-5.png')">
+         </div>
+      </div>
+      <div class="right">
+         <h3>MAVIC Mini 2 SE</h3>
+         <div class="price_text">8400 <small>₺</small></div>
+         <p><ul>
+               <li>Ağırlık: 1280g</li>
+               <li>Kontrol Mesafesi: 2km</li>
+               <li>Uçuş Süresi: 23dk</li>
+               <li>Rüzgar Direnci: 38kph (level 5)</li>
+               <li>4K HDR Video</li>
+               <li>Otomatik Kalkış - Eve Dönüş (RTH) işlevi</li>
+               <li>Maksimum Hız: 57km/s</li>
+         </ul></p>
+         <!--<div class="color flex">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+         </div>-->
+         <div class="add_bt_1">SEPETE EKLE</div>
+      </div>
+   </div>
+
+    
      <!-- products section end-->
 
      <!-- basket section start-->
 
-<div class="basket_section">
-  <div class="basket_items">
-     <img src="images/close-icon.png" onclick="toggleModal()" style="position: absolute; left: 10px; top: 10px; cursor: pointer;">
-     <h2 class="basket_title">SEPETİNİZ</h2>
-     <ul class="basket_list">
-        <li class="basket_empty_string">Sepetinizde ürün bulunmuyor<br>
-           <img src="images/empty_basket_icon.png"></li>      <!--SEPETTEKİ ÜRÜNLERİN LİSTESİ BURADA-->
-        <!--<li class="basket_item">
-           <img src="images/img-9.png" width="100" height="100" alt="">
-           <div class="basket_item_info">
-              <h4 class="product_name">MAVIC Mini 2 SE</h4>
-              <span class="product_price">8.400 ₺</span> <br>
-              <span class="product_remove">Sil</span>
-           </div>
-           <div class="product_count">
-              <span class="decrease">-</span>
-              <span>2</span>
-              <span class="increase">+</span>
-           </div>
-        </li>
-        <li class="basket_item">
-           <img src="images/img-9.png" width="100" height="100" alt="">
-           <div class="basket_item_info">
-              <h4 class="product_name">MAVIC Mini 2 SE</h4>
-              <span class="product_price">8.400 ₺</span> <br>
-              <span class="product_remove">Sil</span>
-           </div>
-           <div class="product_count">
-              <span class="decrease">-</span>
-              <span>2</span>
-              <span class="increase">+</span>
-           </div>
-        </li>-->
-     </ul>
-     <div class="basket_total">
-        <span class="total_price"></span>
-        <button class="complete_shopping">ALIŞVERİŞİ TAMAMLA</button>
-     </div>
-  </div>
-</div>
+    <div class="basket_section">
+      <div class="basket_items">
+         <img src="images/close-icon.png" onclick="toggleModal()" style="position: absolute; left: 10px; top: 10px; cursor: pointer;">
+         <h2 class="basket_title">SEPETİNİZ</h2>
+         <ul class="basket_list">
+            <li class="basket_empty_string">Sepetinizde ürün bulunmuyor<br>
+               <img src="images/empty_basket_icon.png"></li>      <!--SEPETTEKİ ÜRÜNLERİN LİSTESİ BURADA-->
+            <!--<li class="basket_item">
+               <img src="images/img-9.png" width="100" height="100" alt="">
+               <div class="basket_item_info">
+                  <h4 class="product_name">MAVIC Mini 2 SE</h4>
+                  <span class="product_price">8.400 ₺</span> <br>
+                  <span class="product_remove">Sil</span>
+               </div>
+               <div class="product_count">
+                  <span class="decrease">-</span>
+                  <span>2</span>
+                  <span class="increase">+</span>
+               </div>
+            </li>
+            <li class="basket_item">
+               <img src="images/img-9.png" width="100" height="100" alt="">
+               <div class="basket_item_info">
+                  <h4 class="product_name">MAVIC Mini 2 SE</h4>
+                  <span class="product_price">8.400 ₺</span> <br>
+                  <span class="product_remove">Sil</span>
+               </div>
+               <div class="product_count">
+                  <span class="decrease">-</span>
+                  <span>2</span>
+                  <span class="increase">+</span>
+               </div>
+            </li>-->
+         </ul>
+         <div class="basket_total">
+            <span class="total_price"></span>
+            <button class="complete_shopping">ALIŞVERİŞİ TAMAMLA</button>
+         </div>
+      </div>
+    </div>
 
-<!-- basket section end -->
+    <!-- basket section end -->
 
      <!-- footer section start -->
-     <div class="footer_section layout_padding">
-        <div class="container-fluid">
-           <div class="row">
-              <div class="col-lg-8 col-sm-12 padding_0">
-                 <div class="map_main">
-                    <div class="map-responsive">
-                      <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&amp;q=Eiffel+Tower+Paris+France" width="600" height="400" frameborder="0" style="border:0; width: 100%;" allowfullscreen=""></iframe>
-                    </div>
-                 </div>
-              </div>
-              <div class="col-lg-4 col-sm-12">
-                 <div class="call_text"><a href="#"><img src="images/map-icon.png"><span class="padding_left_0">Mağazamızı ziyaret edin</span></a></div>
-                 <div class="call_text"><a href="tel:+"><img src="images/call-icon.png"><span class="padding_left_0">Şimdi Ara  +01 123467890</span></a></div>
-                 <div class="call_text"><a href="mailto:"><img src="images/mail-icon.png"><span class="padding_left_0">demo@gmail.com</span></a></div>
-                 <div class="social_icon">
-                    <ul>
-                       <li><a href="https://www.facebook.com/"><img src="images/fb-icon1.png"></a></li>
-                       <li><a href="https://twitter.com/"><img src="images/twitter-icon.png"></a></li>
-                       <li><a href="https://tr.linkedin.com/"><img src="images/linkedin-icon.png"></a></li>
-                       <li><a href="https://www.instagram.com/"><img src="images/instagram-icon.png"></a></li>
-                    </ul>
-                 </div>
-                 <input type="text" class="email_text" placeholder="E-posta" name="Enter Your Email">
-                 <div class="subscribe_bt"><a href="#">BİZE KATIL</a></div>
-              </div>
-           </div>
-        </div>
-     </div>
-     <!-- footer section end -->
+    <div class="footer_section layout_padding">
+      <div class="container-fluid">
+         <div class="row">
+            <!--<div class="col-lg-8 col-sm-12 padding_0">
+               <div class="map_main">
+                  <div class="map-responsive">
+                    <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&amp;q=Eiffel+Tower+Paris+France" width="600" height="400" frameborder="0" style="border:0; width: 100%;" allowfullscreen=""></iframe>
+                  </div>
+               </div>-->
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-10 margin_bottom_0" style="float: left;">
+               <div class="call_text"><span class="padding_left_0 footer_titles">DESTEK</span></div>
+               <div class="call_text"><a href="#"><span class="padding_left_0 animated-underline">KVK Kanunu</span></a></div>
+               <div class="call_text"><a href="#"><span class="padding_left_0 animated-underline">Öneri ve Şikayet</span></a></div>
+               <div class="call_text"><a href="#"><span class="padding_left_0 animated-underline">Mesafeli Satış Sözleşmesi</span></a></div>
+            </div>
 
-     <!-- copyright section start -->
-     <div class="copyright_section">
-        <div class="container">
-           <p class="copyright_text">Copyright 2019 All Right Reserved By.<a href="https://html.design"> Free  html Templates</p>
-        </div>
-     </div>
-     <!-- copyright section end -->    
+            <div class="col-lg-4 col-md-4 col-sm-10 margin_bottom_0" style="float: left;">
+               <div class="call_text"><span class="padding_left_0 footer_titles">FAYDALI BAĞLANTILAR</span></div>
+               <div class="call_text"><a href="index.html"><img src="images/homepage-icon.png"><span class="padding_left_0 animated-underline">Ana Sayfa</span></a></div>
+               <div class="call_text"><a href="about.html"><img src="images/about-icon.png"><span class="padding_left_0 animated-underline">Hakkımızda</span></a></div>
+               <div class="call_text"><a href="shop.html"><img src="images/shop-icon.png"><span class="padding_left_0 animated-underline">Alışveriş</span></a></div>
+               <div class="call_text"><a href="announcement.html"><img src="images/announcement-icon.png"><span class="padding_left_0 animated-underline">Duyurular</span></a></div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-10 margin_bottom_0" style="float: left;">
+               <div class="call_text"><span class="padding_left_0 footer_titles">İLETİŞİM</span></div>
+               <div class="call_text"><a href="#"><img src="images/map-icon.png"><span class="padding_left_0 animated-underline">Mağazamızı ziyaret edin</span></a></div>
+               <div class="call_text"><a href="#"><img src="images/call-icon.png"><span class="padding_left_0 animated-underline">Şimdi Ara  +01 123467890</span></a></div>
+               <div class="call_text"><a href="#"><img src="images/mail-icon.png"><span class="padding_left_0 animated-underline">demo@gmail.com</span></a></div>
+               <div class="social_icon">
+                  <ul>
+                     <li><a href="#"><img src="images/facebook-icon.png"></a></li>
+                     <li><a href="#"><img src="images/twitter-icon.png"></a></li>
+                     <li><a href="#"><img src="images/linkedin-icon.png"></a></li>
+                     <li><a href="#"><img src="images/instagram-icon.png"></a></li>
+                  </ul>
+               </div>
+               <!--<input type="text" class="email_text" placeholder="E-posta" name="Enter Your Email">
+               <div class="subscribe_bt"><a href="#">BİZE KATIL</a></div>-->
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- footer section end -->
+   
+   <!-- copyright section start -->
+   <div class="copyright_section">
+      <div class="container">
+         <p class="copyright_text">Copyright © 2023 All Right Reserved By.<a href="https://html.design"> Free  html Templates</p>
+      </div>
+   </div>
+   <!-- copyright section end -->    
+
      <!-- Javascript files-->
      <script src="js/main.js"></script>
      <script src="js/jquery.min.js"></script>
@@ -248,6 +276,14 @@
         $("#main").click(function(){
             $("#navbarSupportedContent").toggleClass("nav-normal")
         })
+
+        function img(anyting){
+         document.querySelector('.slide').src=anyting;
+        }
+        function change(change){
+         const line = document.querySelector('.home');
+         line.style.background = change;
+        }
      </script>
   </body>
 </html>

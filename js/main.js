@@ -22,10 +22,11 @@ const createProductItemsHtml = () => {
     <div class="col-sm-4 ${index % 2 == 0 ? "even" : "odd"}">
     <div class="box_main_2">
        <h2 class="speed_text_1"><h4 class="price_text" style="float: left; text-align: left;">
-       Fiyat <span style=" color: #325662">₺</span> <span style=" color: #325662">${
+       Fiyat <span style=" color: #325662">${
          product.price
-       }</span></h4></h2>
+       }</span><span style=" color: #325662"> ₺</span></h4></h2>
        <div class="no_zoomout frame"><a href="product_1.html"><img src="${
+         //SORUNLU(hepsi product_1 i açıyor)
          product.imgSource
        }" class="shop_page_images"></a></div>
        <div class="padding_15">

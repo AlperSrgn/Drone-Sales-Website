@@ -23,6 +23,9 @@
   .mg {
     margin: 0px 0px;
   }
+  .mg-1 {
+    margin-top: 500px;
+  }
   .menu-area-main {
     height: 256px;
     overflow-y: auto;
@@ -77,6 +80,17 @@
   .header-search {
     padding: 15px 0px;
   }
+  .product_container {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    padding: 30px;
+  }
+  .left,
+  .right {
+    width: 100%;
+  }
+
   #collapseFilter.d-md-block {
     padding: 30px 0px;
   }
@@ -138,6 +152,16 @@
   }
   .price_text {
     font-size: 15px;
+  }
+  .product_container {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    padding: 30px;
+  }
+  .left,
+  .right {
+    width: 100%;
   }
 }
 /*------------------------------------------------------------------- 992px x 1199px ---------------------------------------------------------------------*/
@@ -252,6 +276,17 @@
   }
   .cycles_text::after {
     width: 90px;
+  }
+  .product_container {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    padding: 30px;
+  }
+  .left,
+  .right {
+    width: 100%;
+    padding: 0;
   }
   .product_name_text {
     font-size: 12px;
@@ -551,6 +586,26 @@
   .login_menu {
     display: flex;
   }
+  .product_container {
+    width: 100%;
+    height: auto;
+    padding: 30px;
+  }
+  .left,
+  .right {
+    padding: 0;
+  }
+  .right .price_text {
+    margin-bottom: -80px;
+  }
+  .right p {
+    margin-bottom: 130px;
+  }
+
+  .option {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 /*------------------------------------------------------------------- max width 575px ---------------------------------------------------------------------*/
 
@@ -747,6 +802,11 @@
     padding-bottom: 50px;
   }
 
+  .main_image {
+    width: 100%;
+    height: 300px;
+  }
+
   #my_slider a.carousel-control-prev {
     display: none;
   }
@@ -770,5 +830,27 @@
 
   .login_menu {
     display: flex;
+  }
+
+  .product_container {
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+    padding: 30px;
+  }
+  .left,
+  .right {
+    padding: 0;
+  }
+  .right .price_text {
+    margin-bottom: -80px;
+  }
+  .right p {
+    margin-bottom: 130px;
+  }
+
+  .option {
+    display: flex;
+    flex-wrap: wrap;
   }
 }

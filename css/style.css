@@ -977,6 +977,65 @@ button {
   float: left;
 }
 
+.product_container {
+  width: 95%;
+  height: auto;
+  border: 1px solid rgb(220, 220, 220);
+  border-radius: 5px;
+  padding: 20px 50px 20px 50px;
+  margin: 0 auto 50px auto;
+}
+
+.flex {
+  display: flex;
+}
+.flex1 {
+  display: flex;
+  justify-content: space-between;
+}
+.main_image {
+  width: 400px;
+  height: 400px;
+}
+.option img {
+  width: 75px;
+  height: 75px;
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid rgb(220, 220, 220);
+  border-radius: 5px;
+}
+.left {
+  margin-right: 50px;
+}
+.right {
+  padding: 50px 50px 50px 50px;
+}
+
+.right h3 {
+  margin: 20px 0;
+  font-size: 25px;
+}
+
+.right p,
+small {
+  color: #000000;
+}
+.right .price_text {
+  color: #053b50;
+  margin-bottom: 50px;
+  float: left;
+  text-align: left;
+}
+.right p {
+  margin: 20px 0 50px 0;
+  line-height: 25px;
+}
+.right li {
+  margin-top: 20px;
+  list-style: circle;
+}
+
 .basket_count {
   width: 10px;
   height: 10px;
