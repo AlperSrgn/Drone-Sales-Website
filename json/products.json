@@ -4,41 +4,129 @@
     "name": "MAVIC Mini 2 SE",
     "price": 8400,
     "stock": 3,
-    "imgSource": "./images/img-1.png"
+    "imgSource": "./images/img-1.png",
+    "images": [
+      "./images/img-1.png",
+      "./images/img-1.png",
+      "./images/img-1.png",
+      "./images/img-1.png",
+      "./images/img-1.png"
+    ],
+    "weight": 499,
+    "controlDistance": 2,
+    "flightTime": 23,
+    "windResistance": "38kph (level 5)",
+    "video": "4K HDR Video",
+    "features": "Otomatik Kalkış - Eve Dönüş (RTH) işlevi",
+    "maxSpeed": 57
   },
   {
     "id": 2,
     "name": "PHANTOM 3",
     "price": 4300,
     "stock": 100,
-    "imgSource": "./images/img-2.png"
+    "imgSource": "./images/img-2.png",
+    "images": [
+      "./images/img-2.png",
+      "./images/img-2.png",
+      "./images/img-2.png",
+      "./images/img-2.png",
+      "./images/img-2.png"
+    ],
+    "weight": 1280,
+    "controlDistance": 8,
+    "flightTime": 35,
+    "windResistance": "38kph (level 5)",
+    "video": "4K HDR Video",
+    "features": "Otomatik Kalkış - Eve Dönüş (RTH) işlevi",
+    "maxSpeed": 74
   },
   {
     "id": 3,
     "name": "MAVIC PRO",
     "price": 11200,
     "stock": 100,
-    "imgSource": "./images/img-3.png"
+    "imgSource": "./images/img-3.png",
+    "images": [
+      "./images/img-3.png",
+      "./images/img-3.png",
+      "./images/img-3.png",
+      "./images/img-3.png",
+      "./images/img-3.png"
+    ],
+
+    "weight": 750,
+    "controlDistance": 13,
+    "flightTime": 27,
+    "windResistance": "38kph (level 5)",
+    "video": "4K HDR Video",
+    "features": "Otomatik Kalkış - Eve Dönüş (RTH) işlevi",
+    "maxSpeed": 65
   },
   {
     "id": 4,
     "name": "MAVIC Air",
     "price": 7500,
     "stock": 100,
-    "imgSource": "./images/img-9.png"
+    "imgSource": "./images/img-9.png",
+    "images": [
+      "./images/img-9.png",
+      "./images/img-9.png",
+      "./images/img-9.png",
+      "./images/img-9.png",
+      "./images/img-9.png"
+    ],
+
+    "weight": 430,
+    "controlDistance": 10,
+    "flightTime": 21,
+    "windResistance": "38kph (level 5)",
+    "video": "4K HDR Video",
+    "features": "Otomatik Kalkış - Eve Dönüş (RTH) işlevi",
+    "maxSpeed": 68
   },
   {
     "id": 5,
     "name": "SPARK",
     "price": 2400,
     "stock": 100,
-    "imgSource": "./images/img-4-2.png"
+    "imgSource": "./images/img-4-2.png",
+    "images": [
+      "./images/img-4.png",
+      "./images/img-4.png",
+      "./images/img-4.png",
+      "./images/img-4.png",
+      "./images/img-4.png"
+    ],
+
+    "weight": 300,
+    "controlDistance": 2,
+    "flightTime": 16,
+    "windResistance": "38kph (level 5)",
+    "video": "4K HDR Video",
+    "features": "Otomatik Kalkış - Eve Dönüş (RTH) işlevi",
+    "maxSpeed": 50
   },
   {
     "id": 6,
     "name": "Inspire 1",
     "price": 48300,
     "stock": 100,
-    "imgSource": "./images/img-5.png"
+    "imgSource": "./images/img-5.png",
+    "images": [
+      "./images/img-5.png",
+      "./images/img-5.png",
+      "./images/img-5.png",
+      "./images/img-5.png",
+      "./images/img-5.png"
+    ],
+
+    "weight": 1216,
+    "controlDistance": 2,
+    "flightTime": 18,
+    "windResistance": "38kph (level 5)",
+    "video": "4K HDR Video",
+    "features": "Otomatik Kalkış - Eve Dönüş (RTH) işlevi",
+    "maxSpeed": 72
   }
 ]

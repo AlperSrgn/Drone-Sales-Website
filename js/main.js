@@ -14,34 +14,35 @@ const getProducts = () => {
 
 getProducts();
 
+//Shopping sayfası ürünlerin listelenmesi
 const createProductItemsHtml = () => {
   const productListEl = document.querySelector(".product_list");
   let productListHtml = "";
   productList.forEach((product, index) => {
     productListHtml += `
-    <div class="col-sm-4 ${index % 2 == 0 ? "even" : "odd"}">
-    <div class="box_main_2">
-       <h2 class="speed_text_1"><h4 class="price_text" style="float: left; text-align: left;">
-       Fiyat <span style=" color: #325662">${
-         product.price
-       }</span><span style=" color: #325662"> ₺</span></h4></h2>
-       <div class="no_zoomout frame"><a href="product_1.html"><img src="${
-         //SORUNLU(hepsi product_1 i açıyor)
-         product.imgSource
-       }" class="shop_page_images"></a></div>
-       <div class="padding_15">
-          <h2 class="product_name_text">${product.name}</h2>
-          <div class="add_bt_1 noSelect" onclick="addItemToBasket(${
-            product.id
-          })">SEPETE EKLE</div>
-       </div>
-    </div>
- </div>`;
+      <div class="col-sm-4 ${index % 2 == 0 ? "even" : "odd"}">
+      <div class="box_main_2">
+         <h2 class="speed_text_1"><h4 class="price_text" style="float: left; text-align: left;">
+         Fiyat <span style=" color: #325662">${
+           product.price
+         }</span><span style=" color: #325662"> ₺</span></h4></h2>
+         <div class="no_zoomout frame"><a href="product.html?id=${
+           product.id
+         }"><img src="${product.imgSource}" class="shop_page_images"></a></div>
+         <div class="padding_15">
+            <h2 class="product_name_text">${product.name}</h2>
+            <div class="add_bt_1 noSelect" onclick="addItemToBasket(${
+              product.id
+            })">SEPETE EKLE</div>
+         </div>
+      </div>
+   </div>`;
   });
 
   productListEl.innerHTML = productListHtml;
 };
 
+//Sepetteki ürünleri listeleme
 const listBasketItems = () => {
   const basketListEl = document.querySelector(".basket_list");
   const basketCountEl = document.querySelector(".basket_count");
@@ -75,6 +76,7 @@ const listBasketItems = () => {
     totalPrice > 0 ? "Sepet Tutarı: " + totalPrice.toFixed(2) + " ₺" : null;
 };
 
+//Sepete ürün ekleme
 const addItemToBasket = productId => {
   let foundProduct = productList.find(product => product.id == productId);
   if (foundProduct) {
@@ -99,6 +101,7 @@ const addItemToBasket = productId => {
   }
 };
 
+//Sepetten ürün silme
 const removeItemToBasket = productId => {
   const foundIndex = basketList.findIndex(
     basket => basket.product.id == productId
@@ -109,6 +112,7 @@ const removeItemToBasket = productId => {
   listBasketItems();
 };
 
+//Sepetteki ürün sayısını artırma
 const decreaseItem = productId => {
   const foundIndex = basketList.findIndex(
     basket => basket.product.id == productId
@@ -123,6 +127,7 @@ const decreaseItem = productId => {
   listBasketItems();
 };
 
+//Sepetteki ürün sayısını azaltma
 const increaseItem = productId => {
   const foundIndex = basketList.findIndex(
     basket => basket.product.id == productId
@@ -137,6 +142,40 @@ const increaseItem = productId => {
     }
   }
   listBasketItems();
+};
+
+window.onload = function () {
+  // Ürün bilgilerini JSON dosyasından al
+  fetch("./json/products.json")
+    .then(response => response.json())
+    .then(data => {
+      // URL'deki ürün ID'sini al
+      const urlParams = new URLSearchParams(window.location.search);
+      const productId = urlParams.get("id");
+
+      // Bu ID'ye sahip ürünü bul
+      const product = data.find(item => item.id == productId);
+
+      if (product) {
+        // Ürün detaylarını göster
+        document.querySelector(".main_image img").src = product.imgSource;
+        document.querySelector(".right h3").textContent = product.name;
+        document.querySelector(
+          ".price_text"
+        ).innerHTML = `${product.price}<small>₺</small>`;
+        document.querySelector(".right p").innerHTML = `
+          <ul>
+            <li>Ağırlık: ${product.weight} g</li>
+            <li>Kontrol Mesafesi: ${product.controlDistance} km</li>
+            <li>Uçuş Süresi: ${product.flightTime} dk</li>
+            <li>Rüzgar Direnci: ${product.windResistance}</li>
+            <li>${product.video}</li>
+            <li>${product.features}</li>
+            <li>Maksimum Hız: ${product.maxSpeed} km/h</li>
+          </ul>`;
+        // Diğer detayları da benzer şekilde gösterebilirsiniz...
+      }
+    });
 };
 
 setTimeout(() => {
