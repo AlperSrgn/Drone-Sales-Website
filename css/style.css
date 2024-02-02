@@ -1004,6 +1004,7 @@ button {
   margin: 5px;
   border: 1px solid rgb(220, 220, 220);
   border-radius: 5px;
+  cursor: pointer;
 }
 .left {
   margin-right: 50px;
@@ -1014,11 +1015,13 @@ button {
 
 .right h3 {
   margin: 20px 0;
-  font-size: 25px;
+  font-size: 30px;
 }
 
-.right p,
-small {
+.right p {
+  color: #000000;
+}
+.right span {
   color: #000000;
 }
 .right .price_text {
@@ -1026,7 +1029,7 @@ small {
   margin-bottom: 50px;
   float: left;
   text-align: left;
-  font-size: 20px;
+  font-size: 30px;
 }
 .right p {
   margin: 20px 0 50px 0;
@@ -1228,6 +1231,14 @@ small {
 
 .box_main_2:hover {
   box-shadow: 0px 1px 9px 1px #fff;
+}
+
+.box_main_2 .price_text {
+  float: left;
+  text-align: left;
+}
+.box_main_2 span {
+  color: #325662;
 }
 
 .box_main_4 {

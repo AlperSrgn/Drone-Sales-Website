@@ -12,11 +12,11 @@
       "./images/img-1.png",
       "./images/img-1.png"
     ],
-    "weight": 499,
-    "controlDistance": 2,
-    "flightTime": 23,
-    "windResistance": "38kph (level 5)",
-    "video": "4K HDR Video",
+    "weight": 249,
+    "controlDistance": 10,
+    "flightTime": 31,
+    "windResistance": "38km/s (seviye 5)",
+    "video": "2.7K Video",
     "features": "Otomatik Kalkış - Eve Dönüş (RTH) işlevi",
     "maxSpeed": 57
   },
@@ -36,7 +36,7 @@
     "weight": 1280,
     "controlDistance": 8,
     "flightTime": 35,
-    "windResistance": "38kph (level 5)",
+    "windResistance": "38km/s (seviye 5)",
     "video": "4K HDR Video",
     "features": "Otomatik Kalkış - Eve Dönüş (RTH) işlevi",
     "maxSpeed": 74
@@ -58,7 +58,7 @@
     "weight": 750,
     "controlDistance": 13,
     "flightTime": 27,
-    "windResistance": "38kph (level 5)",
+    "windResistance": "38km/s (seviye 5)",
     "video": "4K HDR Video",
     "features": "Otomatik Kalkış - Eve Dönüş (RTH) işlevi",
     "maxSpeed": 65
@@ -80,7 +80,7 @@
     "weight": 430,
     "controlDistance": 10,
     "flightTime": 21,
-    "windResistance": "38kph (level 5)",
+    "windResistance": "38km/s (seviye 5)",
     "video": "4K HDR Video",
     "features": "Otomatik Kalkış - Eve Dönüş (RTH) işlevi",
     "maxSpeed": 68
@@ -102,8 +102,8 @@
     "weight": 300,
     "controlDistance": 2,
     "flightTime": 16,
-    "windResistance": "38kph (level 5)",
-    "video": "4K HDR Video",
+    "windResistance": "38km/s (seviye 5)",
+    "video": "1080P Full HD Video",
     "features": "Otomatik Kalkış - Eve Dönüş (RTH) işlevi",
     "maxSpeed": 50
   },
@@ -124,7 +124,7 @@
     "weight": 1216,
     "controlDistance": 2,
     "flightTime": 18,
-    "windResistance": "38kph (level 5)",
+    "windResistance": "38km/s (seviye 5)",
     "video": "4K HDR Video",
     "features": "Otomatik Kalkış - Eve Dönüş (RTH) işlevi",
     "maxSpeed": 72

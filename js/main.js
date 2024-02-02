@@ -22,10 +22,9 @@ const createProductItemsHtml = () => {
     productListHtml += `
       <div class="col-sm-4 ${index % 2 == 0 ? "even" : "odd"}">
       <div class="box_main_2">
-         <h2 class="speed_text_1"><h4 class="price_text" style="float: left; text-align: left;">
-         Fiyat <span style=" color: #325662">${
+         <h2 class="speed_text_1"><h4 class="price_text"><span>${
            product.price
-         }</span><span style=" color: #325662"> ₺</span></h4></h2>
+         }</span><span> TL</span></h4></h2>
          <div class="no_zoomout frame"><a href="product.html?id=${
            product.id
          }"><img src="${product.imgSource}" class="shop_page_images"></a></div>
@@ -58,7 +57,7 @@ const listBasketItems = () => {
     <img src="${item.product.imgSource}" width="100" height="100" alt="">
     <div class="basket_item_info">
        <h4 class="product_name">${item.product.name}</h4>
-       <span class="product_price">${item.product.price} ₺</span> <br>
+       <span class="product_price">${item.product.price} TL</span> <br>
        <span class="product_remove" onclick="removeItemToBasket(${item.product.id})"><img src="images/remove-icon.png"> Sil</span>
     </div>
     <div class="product_count noSelect">
@@ -73,7 +72,7 @@ const listBasketItems = () => {
     ? basketListHtml
     : `<li class="basket_empty_string">Sepetinizde ürün bulunmuyor<br><img src="images/empty_basket_icon.png"></li>`;
   totalPriceEl.innerHTML =
-    totalPrice > 0 ? "Sepet Tutarı: " + totalPrice.toFixed(2) + " ₺" : null;
+    totalPrice > 0 ? "Sepet Tutarı: " + totalPrice.toFixed(2) + " TL" : null;
 };
 
 //Sepete ürün ekleme
@@ -144,6 +143,7 @@ const increaseItem = productId => {
   listBasketItems();
 };
 
+//Tek bir product sayfasına, seçilen ürünün bilgilerinin getirilmesi
 window.onload = function () {
   // Ürün bilgilerini JSON dosyasından al
   fetch("./json/products.json")
@@ -162,7 +162,7 @@ window.onload = function () {
         document.querySelector(".right h3").textContent = product.name;
         document.querySelector(
           ".price_text"
-        ).innerHTML = `${product.price}<small>₺</small>`;
+        ).innerHTML = `${product.price}<span> TL</span>`;
         document.querySelector(".right p").innerHTML = `
           <ul>
             <li>Ağırlık: ${product.weight} g</li>
@@ -171,9 +171,8 @@ window.onload = function () {
             <li>Rüzgar Direnci: ${product.windResistance}</li>
             <li>${product.video}</li>
             <li>${product.features}</li>
-            <li>Maksimum Hız: ${product.maxSpeed} km/h</li>
+            <li>Maksimum Hız: ${product.maxSpeed} km/s</li>
           </ul>`;
-        // Diğer detayları da benzer şekilde gösterebilirsiniz...
       }
     });
 };
