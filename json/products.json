@@ -1,16 +1,16 @@
 [
   {
     "id": 1,
-    "name": "MAVIC Mini 2 SE",
+    "name": "MAVIC Mini",
     "price": 8400,
     "stock": 3,
     "imgSource": "./images/img-1.png",
     "images": [
       "./images/img-1.png",
-      "./images/img-1.png",
-      "./images/img-1.png",
-      "./images/img-1.png",
-      "./images/img-1.png"
+      "./images/img-1_1.png",
+      "./images/img-1_2.png",
+      "./images/img-1_3.png",
+      "./images/img-1_4.png"
     ],
     "weight": 249,
     "controlDistance": 10,
@@ -71,10 +71,10 @@
     "imgSource": "./images/img-9.png",
     "images": [
       "./images/img-9.png",
-      "./images/img-9.png",
-      "./images/img-9.png",
-      "./images/img-9.png",
-      "./images/img-9.png"
+      "./images/img-9_1.png",
+      "./images/img-9_2.png",
+      "./images/img-9_3.png",
+      "./images/img-9_4.png"
     ],
 
     "weight": 430,
@@ -90,12 +90,12 @@
     "name": "SPARK",
     "price": 2400,
     "stock": 100,
-    "imgSource": "./images/img-4-2.png",
+    "imgSource": "./images/img-4_1.png",
     "images": [
-      "./images/img-4.png",
-      "./images/img-4.png",
-      "./images/img-4.png",
-      "./images/img-4.png",
+      "./images/img-4_1.png",
+      "./images/img-4_2.png",
+      "./images/img-4_3.png",
+      "./images/img-4_4.png",
       "./images/img-4.png"
     ],
 

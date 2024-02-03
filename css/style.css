@@ -291,6 +291,9 @@ button {
   text-align: center;
   border-radius: 5px;
 }
+.dropdown li i {
+  color: black;
+}
 
 .dropdown:hover .dropdown-content {
   display: block;
@@ -994,8 +997,8 @@ button {
   justify-content: space-between;
 }
 .main_image {
-  width: 400px;
-  height: 400px;
+  width: 350px;
+  height: 350px;
 }
 .option img {
   width: 75px;
@@ -1134,6 +1137,7 @@ button {
   cursor: pointer;
   color: gray;
 }
+
 .basket_item .product_count {
   font-size: 1.5rem;
   font-weight: bold;
@@ -1160,7 +1164,7 @@ button {
   bottom: 5%;
   align-items: center;
   width: inherit;
-  transition: all 250ms ease-in-out;
+  transition: all 0ms ease-in-out;
 }
 
 .basket_total button {
@@ -1539,6 +1543,12 @@ textarea#comment::placeholder {
   float: left;
   padding-right: 10px;
   padding-top: 10px;
+}
+.social_icon i {
+  color: rgb(255, 255, 255);
+}
+.social_icon i:hover {
+  color: #98c7fa;
 }
 
 .copyright_section {

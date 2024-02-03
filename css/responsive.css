@@ -805,6 +805,7 @@
   .main_image {
     width: 100%;
     height: 300px;
+    margin-bottom: 50px;
   }
 
   #my_slider a.carousel-control-prev {

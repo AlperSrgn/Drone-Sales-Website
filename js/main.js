@@ -58,7 +58,7 @@ const listBasketItems = () => {
     <div class="basket_item_info">
        <h4 class="product_name">${item.product.name}</h4>
        <span class="product_price">${item.product.price} TL</span> <br>
-       <span class="product_remove" onclick="removeItemToBasket(${item.product.id})"><img src="images/remove-icon.png"> Sil</span>
+       <span class="product_remove" onclick="removeItemToBasket(${item.product.id})"><i class="fa fa-trash-o" aria-hidden="true"></i> Sil</span>
     </div>
     <div class="product_count noSelect">
        <span class="decrease" onclick="decreaseItem(${item.product.id})">-</span>
@@ -145,19 +145,20 @@ const increaseItem = productId => {
 
 //Tek bir product sayfasına, seçilen ürünün bilgilerinin getirilmesi
 window.onload = function () {
-  // Ürün bilgilerini JSON dosyasından al
+  // ürün bilgilerini json dosyasından al
   fetch("./json/products.json")
     .then(response => response.json())
     .then(data => {
-      // URL'deki ürün ID'sini al
-      const urlParams = new URLSearchParams(window.location.search);
-      const productId = urlParams.get("id");
+      // url'deki ürün id'sini al
+      const urlparams = new URLSearchParams(window.location.search);
+      const productid = urlparams.get("id");
 
-      // Bu ID'ye sahip ürünü bul
-      const product = data.find(item => item.id == productId);
-
+      // bu id'ye sahip ürünü bul
+      const product = data.find(item => item.id == productid);
+      // ürün adını sayfa başlığında göster
+      document.title = product.name;
       if (product) {
-        // Ürün detaylarını göster
+        // ürün detaylarını göster
         document.querySelector(".main_image img").src = product.imgSource;
         document.querySelector(".right h3").textContent = product.name;
         document.querySelector(
@@ -173,9 +174,25 @@ window.onload = function () {
             <li>${product.features}</li>
             <li>Maksimum Hız: ${product.maxSpeed} km/s</li>
           </ul>`;
+
+        // images dizisindeki tüm fotoğrafları göster
+        product.images.forEach((image, index) => {
+          const imgElement = document.createElement("img");
+          imgElement.src = image;
+          imgElement.alt = `Product Image ${index + 1}`;
+          imgElement.onclick = function () {
+            img(image); // img fonksiyonunu çağır
+          };
+          document.querySelector(".option").appendChild(imgElement);
+        });
       }
     });
 };
+
+// img fonksiyonu
+function img(src) {
+  document.querySelector(".main_image img").src = src;
+}
 
 setTimeout(() => {
   createProductItemsHtml();
