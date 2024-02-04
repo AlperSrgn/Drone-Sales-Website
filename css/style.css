@@ -335,10 +335,11 @@ button {
   height: auto;
   position: relative;
   float: left;
-  font-size: 18px;
+  font-size: 19px;
   margin: 0 5px;
   padding: 0 5px;
   color: #000;
+  background-color: white;
 }
 
 .sidenav {
@@ -1046,7 +1047,7 @@ button {
 .basket_count {
   width: 10px;
   height: 10px;
-  left: 2.8rem;
+  left: 2.6rem;
   bottom: 0;
   background-color: black;
   border-radius: 50%;

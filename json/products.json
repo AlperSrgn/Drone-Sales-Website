@@ -28,10 +28,10 @@
     "imgSource": "./images/img-2.png",
     "images": [
       "./images/img-2.png",
-      "./images/img-2.png",
-      "./images/img-2.png",
-      "./images/img-2.png",
-      "./images/img-2.png"
+      "./images/img-2_1.png",
+      "./images/img-2_2.png",
+      "./images/img-2_3.png",
+      "./images/img-2_4.png"
     ],
     "weight": 1280,
     "controlDistance": 8,
@@ -49,10 +49,10 @@
     "imgSource": "./images/img-3.png",
     "images": [
       "./images/img-3.png",
-      "./images/img-3.png",
-      "./images/img-3.png",
-      "./images/img-3.png",
-      "./images/img-3.png"
+      "./images/img-3_1.png",
+      "./images/img-3_2.png",
+      "./images/img-3_3.png",
+      "./images/img-3_4.png"
     ],
 
     "weight": 750,
@@ -115,10 +115,10 @@
     "imgSource": "./images/img-5.png",
     "images": [
       "./images/img-5.png",
-      "./images/img-5.png",
-      "./images/img-5.png",
-      "./images/img-5.png",
-      "./images/img-5.png"
+      "./images/img-5_1.png",
+      "./images/img-5_2.png",
+      "./images/img-5_3.png",
+      "./images/img-5_4.png"
     ],
 
     "weight": 1216,
