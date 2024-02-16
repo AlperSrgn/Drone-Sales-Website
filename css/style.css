@@ -325,19 +325,20 @@ button {
 .login_menu {
   width: 100%;
   display: flex;
+  margin-right: 15px;
 }
 .login_menu ul {
   margin: 0px;
   padding: 0px;
 }
 .login_menu li {
-  width: 5rem;
+  width: 4.5rem;
   height: auto;
   position: relative;
   float: left;
   font-size: 19px;
   margin: 0 5px;
-  padding: 0 5px;
+  padding: 0;
   color: #000;
   background-color: white;
 }
@@ -990,9 +991,163 @@ button {
   margin: 0 auto 50px auto;
 }
 
+/*payment section start*/
+.payment_container {
+  min-height: 100vh;
+  background-color: #eee;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-flow: column;
+  padding-bottom: 50px;
+  padding: 160px;
+}
+.payment_container form {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  width: 600px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+.payment_container form .inputbox {
+  margin-top: 20px;
+}
+.payment_container form .inputbox span {
+  display: block;
+  color: #999;
+  padding-bottom: 5px;
+}
+.payment_container form .inputbox input,
+select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid black;
+  color: #444;
+}
+
+.payment_container form .flexbox {
+  display: flex;
+  gap: 15px;
+}
+
+.payment_container form .flexbox .inputbox {
+  flex: 1 1 150px;
+}
+
+.payment_container form .submit_btn {
+  width: 100%;
+  background-color: #fff;
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 20px;
+  color: #053b50;
+  border-color: #053b50;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.payment_container form .submit_btn:hover {
+  background-color: #6fd5a4;
+  border-color: #6fd5a4;
+  color: #fff;
+}
+
+.payment_container .card_container {
+  position: relative;
+  margin-bottom: -20px;
+  height: 250px;
+  width: 400px;
+}
+
+.payment_container .card_container .front {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  border-radius: 15px;
+  backface-visibility: hidden;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+  background-color: #053b50;
+  transform: perspective(1000px) rotateY(0deg);
+  transition: transform 0.4s ease-out;
+}
+
+.payment_container .card_container .front .card_image {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+.payment_container .card_container .front .card_image img {
+  height: 50px;
+}
+
+.payment_container .card_container .front .card_number_box {
+  padding: 30px 0;
+  font-size: 22px;
+  color: #fff;
+}
+.payment_container .card_container .front .flexbox {
+  display: flex;
+}
+.payment_container .card_container .front .flexbox .box:nth-child(1) {
+  margin-right: auto;
+}
+.payment_container .card_container .front .flexbox .box {
+  font-style: 15px;
+  color: #fff;
+}
+
+.payment_container .card_container .back {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: right;
+  backface-visibility: hidden;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+  background-color: #053b50;
+  transform: perspective(1000px) rotateY(180deg);
+  transition: transform 0.4s ease-out;
+}
+.payment_container .card_container .back .stripe {
+  background-color: #000;
+  width: 100%;
+  height: 50px;
+  margin: 10px 0;
+}
+.payment_container .card_container .back .box {
+  padding: 0 20px;
+}
+.payment_container .card_container .back .box span {
+  color: #fff;
+  font-size: 15px;
+}
+.payment_container .card_container .back .box .cvv_box {
+  height: 50px;
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  color: #333;
+  background: #fff;
+  border-radius: 5px;
+}
+.payment_container .card_container .back .box img {
+  margin-top: 30px;
+  height: 30px;
+}
+/*payment section end*/
+
 .flex {
   display: flex;
 }
+
 .flex1 {
   display: flex;
   justify-content: space-between;
@@ -1043,11 +1198,14 @@ button {
   margin-top: 20px;
   list-style: circle;
 }
+.right .add_bt_1 {
+  margin-top: 50px;
+}
 
 .basket_count {
   width: 10px;
   height: 10px;
-  left: 2.6rem;
+  left: 2.3rem;
   bottom: 0;
   background-color: black;
   border-radius: 50%;

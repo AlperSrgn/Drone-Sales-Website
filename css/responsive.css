@@ -651,7 +651,6 @@
     bottom: 5%;
     align-items: center;
     width: inherit;
-    transition: all 250ms ease-in-out;
   }
 
   .basket_total button {

@@ -173,7 +173,8 @@ window.onload = function () {
             <li>${product.video}</li>
             <li>${product.features}</li>
             <li>Maksimum Hız: ${product.maxSpeed} km/s</li>
-          </ul>`;
+          </ul>
+          <div class="add_bt_1 noSelect" onclick="addItemToBasket(${product.id})">SEPETE EKLE</div>`;
 
         // images dizisindeki tüm fotoğrafları göster
         product.images.forEach((image, index) => {
